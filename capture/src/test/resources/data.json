@@ -1,6 +1,6 @@
 {
    "type":"FeatureCollection",
-   "features":{
+   "receivers":{
       "108042":{
          "type":"Feature",
          "geometry":{

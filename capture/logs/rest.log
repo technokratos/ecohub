@@ -1,9 +1,9 @@
-747  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-763  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+747  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+763  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1138 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1180 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@32910148, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3f56875e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2b4bac49, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@fd07cbb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3571b748, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3e96bacf, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@484970b0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4470f8a6]
 3440 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$225804a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4443 [main] INFO  com.ognio.rest.RestTest - No active profile set, falling back to default profiles: default
+4443 [main] INFO  RestTest - No active profile set, falling back to default profiles: default
 6290 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 6297 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 6347 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
@@ -56,7 +56,7 @@
 20287 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 20329 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 20330 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-20332 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 18.959 seconds (JVM running for 21.258)
+20332 [main] INFO  RestTest - Started RestTest in 18.959 seconds (JVM running for 21.258)
 20549 [http-nio-9762-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 20549 [http-nio-9762-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 20587 [http-nio-9762-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 37 ms
@@ -70,12 +70,12 @@
 20986 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 21221 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_UNKNOWN/LAPTOP-KULIKOV:9762 - deregister  status: 200
 21237 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-992  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-1009 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+992  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+1009 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1533 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1561 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7241a47d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70f59913, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77258e59, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5dcd8c7a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2250b9f2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e3181aa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@253d9f73, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@142269f2]
 3816 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$45152b75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4600 [main] INFO  com.ognio.rest.RestTest - No active profile set, falling back to default profiles: default
+4600 [main] INFO  RestTest - No active profile set, falling back to default profiles: default
 6884 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 6891 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 6961 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
@@ -129,7 +129,7 @@
 22343 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 22386 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 22387 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-22391 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 20.74 seconds (JVM running for 24.143)
+22391 [main] INFO  RestTest - Started RestTest in 20.74 seconds (JVM running for 24.143)
 22594 [http-nio-9762-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 22595 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 22625 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 30 ms
@@ -151,12 +151,12 @@
 69816 [DiscoveryClient-0] WARN  c.n.discovery.TimedSupervisorTask - task supervisor shutting down, can't accept the task
 69821 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_UNKNOWN/LAPTOP-KULIKOV:9762 - deregister  status: 200
 69837 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-621  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-630  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+621  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+630  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1014 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1053 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5609159b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2118cddf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@17a7f733, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@68567e20, org.springframework.test.context.support.DirtiesContextTestExecutionListener@76ed1b7c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@11fc564b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@394a2528, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6236eb5f]
 3740 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2e82249e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4991 [main] INFO  com.ognio.rest.RestTest - No active profile set, falling back to default profiles: default
+4991 [main] INFO  RestTest - No active profile set, falling back to default profiles: default
 7445 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 7453 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 7519 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 0 repository interfaces.
@@ -210,7 +210,7 @@
 20637 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 20681 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 20682 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-20685 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 19.504 seconds (JVM running for 21.549)
+20685 [main] INFO  RestTest - Started RestTest in 19.504 seconds (JVM running for 21.549)
 20894 [http-nio-9762-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 20894 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 20925 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 31 ms
@@ -223,12 +223,12 @@
 21541 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 21611 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_UNKNOWN/LAPTOP-KULIKOV:9762 - deregister  status: 200
 21626 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-573  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.MainTest], using SpringBootContextLoader
-584  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.MainTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+573  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [MainTest], using SpringBootContextLoader
+584  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [MainTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1029 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1156 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37f1104d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55740540, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@60015ef5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2f54a33d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1018bde2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@65b3f4a4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@f2ff811, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@568ff82]
 3741 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c3dd86bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4617 [main] INFO  com.ognio.rest.MainTest - No active profile set, falling back to default profiles: default
+4617 [main] INFO  MainTest - No active profile set, falling back to default profiles: default
 6254 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 6262 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 6347 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
@@ -250,16 +250,16 @@
 14556 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_1
 14560 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_2
 14563 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_3
-14618 [main] INFO  com.ognio.rest.MainTest - Started MainTest in 13.346 seconds (JVM running for 15.529)
+14618 [main] INFO  MainTest - Started MainTest in 13.346 seconds (JVM running for 15.529)
 14933 [Thread-7] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
 14937 [Thread-7] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application UNKNOWN with eureka with status DOWN
 14942 [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-753  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.MainTest], using SpringBootContextLoader
-772  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.MainTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+753  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [MainTest], using SpringBootContextLoader
+772  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [MainTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1307 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1334 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@79c7532f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2a448449, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@32f232a5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@43f82e78, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e54303, org.springframework.test.context.transaction.TransactionalTestExecutionListener@e8df99a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2dc995f4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2f40e5db]
 3563 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$15d7408e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4398 [main] INFO  com.ognio.rest.MainTest - No active profile set, falling back to default profiles: default
+4398 [main] INFO  MainTest - No active profile set, falling back to default profiles: default
 6115 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 6119 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 6180 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
@@ -281,16 +281,16 @@
 15293 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_1
 15296 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_2
 15298 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_3
-15352 [main] INFO  com.ognio.rest.MainTest - Started MainTest in 13.932 seconds (JVM running for 16.387)
+15352 [main] INFO  MainTest - Started MainTest in 13.932 seconds (JVM running for 16.387)
 108934 [Thread-7] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
 108938 [Thread-7] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application UNKNOWN with eureka with status DOWN
 108943 [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-929  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.MainTest], using SpringBootContextLoader
-959  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.MainTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+929  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [MainTest], using SpringBootContextLoader
+959  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [MainTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1559 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1593 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@79c7532f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2a448449, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@32f232a5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@43f82e78, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e54303, org.springframework.test.context.transaction.TransactionalTestExecutionListener@e8df99a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2dc995f4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2f40e5db]
 3975 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$67a8d333] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4769 [main] INFO  com.ognio.rest.MainTest - No active profile set, falling back to default profiles: default
+4769 [main] INFO  MainTest - No active profile set, falling back to default profiles: default
 7101 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 7107 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 7165 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 0 repository interfaces.
@@ -312,16 +312,16 @@
 17207 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_1
 17215 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_2
 17225 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_3
-17284 [main] INFO  com.ognio.rest.MainTest - Started MainTest in 15.582 seconds (JVM running for 19.126)
+17284 [main] INFO  MainTest - Started MainTest in 15.582 seconds (JVM running for 19.126)
 109244 [Thread-7] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
 109249 [Thread-7] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application UNKNOWN with eureka with status DOWN
 109254 [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-644  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.MainTest], using SpringBootContextLoader
-659  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.MainTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+644  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [MainTest], using SpringBootContextLoader
+659  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [MainTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1170 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1202 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@79c7532f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2a448449, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@32f232a5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@43f82e78, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e54303, org.springframework.test.context.transaction.TransactionalTestExecutionListener@e8df99a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2dc995f4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2f40e5db]
 3368 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9e2a9261] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4268 [main] INFO  com.ognio.rest.MainTest - No active profile set, falling back to default profiles: default
+4268 [main] INFO  MainTest - No active profile set, falling back to default profiles: default
 6958 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 6966 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 7039 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 0 repository interfaces.
@@ -343,16 +343,16 @@
 26573 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_1
 26577 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_2
 26581 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_3
-26632 [main] INFO  com.ognio.rest.MainTest - Started MainTest in 25.314 seconds (JVM running for 28.854)
+26632 [main] INFO  MainTest - Started MainTest in 25.314 seconds (JVM running for 28.854)
 200715 [Thread-7] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
 200720 [Thread-7] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application UNKNOWN with eureka with status DOWN
 200726 [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-605  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.MainTest], using SpringBootContextLoader
-627  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.MainTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+605  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [MainTest], using SpringBootContextLoader
+627  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [MainTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1273 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1387 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37f1104d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55740540, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@60015ef5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2f54a33d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1018bde2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@65b3f4a4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@f2ff811, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@568ff82]
 3934 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c3dd86bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4887 [main] INFO  com.ognio.rest.MainTest - No active profile set, falling back to default profiles: default
+4887 [main] INFO  MainTest - No active profile set, falling back to default profiles: default
 6525 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 6530 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 6595 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
@@ -374,16 +374,16 @@
 15968 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_1
 15970 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_2
 15973 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_3
-16020 [main] INFO  com.ognio.rest.MainTest - Started MainTest in 14.445 seconds (JVM running for 16.993)
+16020 [main] INFO  MainTest - Started MainTest in 14.445 seconds (JVM running for 16.993)
 16332 [Thread-7] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
 16338 [Thread-7] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application UNKNOWN with eureka with status DOWN
 16347 [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-498  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-509  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+498  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+509  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 979  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1061 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@76ed1b7c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@11fc564b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@394a2528, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6236eb5f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c1e2a9e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@fa36558, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@672872e1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@32910148]
 3027 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3f39b9a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-3878 [main] INFO  com.ognio.rest.RestTest - No active profile set, falling back to default profiles: default
+3878 [main] INFO  RestTest - No active profile set, falling back to default profiles: default
 5333 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 5340 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 5402 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
@@ -437,7 +437,7 @@
 16827 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 16870 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 16871 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-16875 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 15.671 seconds (JVM running for 17.433)
+16875 [main] INFO  RestTest - Started RestTest in 15.671 seconds (JVM running for 17.433)
 17133 [http-nio-9762-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 17133 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 17175 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 42 ms
@@ -450,12 +450,12 @@
 17963 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 18044 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_UNKNOWN/LAPTOP-KULIKOV:9762 - deregister  status: 200
 18055 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-460  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-472  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+460  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+472  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 892  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 958  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@76ed1b7c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@11fc564b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@394a2528, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6236eb5f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c1e2a9e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@fa36558, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@672872e1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@32910148]
 3197 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec7bffc6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-3982 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+3982 [main] INFO  RestTest - The following profiles are active: node0
 5580 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 5584 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 5635 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
@@ -534,7 +534,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
 	... 41 common frames omitted
-11694 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6236eb5f] to prepare test instance [com.ognio.rest.RestTest@321b2469]
+11694 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6236eb5f] to prepare test instance [RestTest@321b2469]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
@@ -594,12 +594,12 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
 	... 41 common frames omitted
-529  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-544  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+529  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+544  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 930  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1000 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@76ed1b7c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@11fc564b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@394a2528, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6236eb5f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c1e2a9e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@fa36558, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@672872e1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@32910148]
 3104 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6dacafc3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-3874 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+3874 [main] INFO  RestTest - The following profiles are active: node0
 5331 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 5339 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 5388 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
@@ -653,7 +653,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 18009 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 18059 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 18060 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-18063 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 16.872 seconds (JVM running for 18.799)
+18063 [main] INFO  RestTest - Started RestTest in 16.872 seconds (JVM running for 18.799)
 18308 [http-nio-9762-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 18308 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 18346 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 38 ms
@@ -665,12 +665,12 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 21947 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 21971 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CAPTURE-GAME/LAPTOP-KULIKOV:capture-game:9762 - deregister  status: 200
 21978 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-496  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-506  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+496  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+506  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 990  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1074 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@76ed1b7c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@11fc564b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@394a2528, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6236eb5f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c1e2a9e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@fa36558, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@672872e1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@32910148]
 4327 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec7bffc6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-5275 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+5275 [main] INFO  RestTest - The following profiles are active: node0
 7044 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 7048 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 7091 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
@@ -724,7 +724,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 20127 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 20168 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 20168 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-20171 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 18.886 seconds (JVM running for 20.86)
+20171 [main] INFO  RestTest - Started RestTest in 18.886 seconds (JVM running for 20.86)
 20399 [http-nio-9762-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 20399 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 20439 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 39 ms
@@ -733,12 +733,12 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 21718 [Thread-8] WARN  c.n.d.InstanceInfoReplicator - Ignoring onDemand update due to rate limiter
 21724 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 21735 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
-835  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-851  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+835  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+851  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1407 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1441 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7241a47d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70f59913, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77258e59, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5dcd8c7a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2250b9f2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e3181aa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@253d9f73, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@142269f2]
 3471 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9e2a9261] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4225 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+4225 [main] INFO  RestTest - The following profiles are active: node0
 5949 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 5953 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 5998 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
@@ -792,7 +792,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 20780 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 20861 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 20862 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-20867 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 19.297 seconds (JVM running for 22.027)
+20867 [main] INFO  RestTest - Started RestTest in 19.297 seconds (JVM running for 22.027)
 21101 [http-nio-9762-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 21101 [http-nio-9762-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 21138 [http-nio-9762-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 37 ms
@@ -889,24 +889,24 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 286443 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 286461 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CAPTURE-GAME/LAPTOP-KULIKOV:capture-game:9762 - deregister  status: 200
 286470 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-777  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-792  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+777  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+792  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1304 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1337 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7241a47d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70f59913, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77258e59, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5dcd8c7a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2250b9f2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e3181aa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@253d9f73, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@142269f2]
 3320 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$18aa796d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4057 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+4057 [main] INFO  RestTest - The following profiles are active: node0
 6048 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 6103 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 6194 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50ms. Found 0 repository interfaces.
 6419 [main] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
 7036 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=858c856b-2b5f-394d-8558-8bd975a103b8
 7470 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$18aa796d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-732  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-747  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+732  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+747  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1252 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1278 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7241a47d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70f59913, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77258e59, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5dcd8c7a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2250b9f2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e3181aa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@253d9f73, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@142269f2]
 3427 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e603f094] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4158 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+4158 [main] INFO  RestTest - The following profiles are active: node0
 6187 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 6192 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 6253 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
@@ -960,7 +960,7 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 20628 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 20677 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 20679 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-20683 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 19.319 seconds (JVM running for 21.65)
+20683 [main] INFO  RestTest - Started RestTest in 19.319 seconds (JVM running for 21.65)
 20923 [http-nio-9762-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 20923 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 20964 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 40 ms
@@ -1030,12 +1030,12 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 101537 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 101572 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CAPTURE-GAME/LAPTOP-KULIKOV:capture-game:9762 - deregister  status: 200
 101585 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-819  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-833  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+819  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+833  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1321 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1363 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7241a47d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70f59913, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77258e59, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5dcd8c7a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2250b9f2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e3181aa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@253d9f73, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@142269f2]
 3482 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f0394877] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4225 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+4225 [main] INFO  RestTest - The following profiles are active: node0
 6235 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 6242 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 6298 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 repository interfaces.
@@ -1089,7 +1089,7 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 20747 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 20800 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 20800 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-20804 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 19.353 seconds (JVM running for 22.045)
+20804 [main] INFO  RestTest - Started RestTest in 19.353 seconds (JVM running for 22.045)
 21063 [http-nio-9762-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 21063 [http-nio-9762-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 21102 [http-nio-9762-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 39 ms
@@ -1127,12 +1127,12 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 89018 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 89077 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CAPTURE-GAME/LAPTOP-KULIKOV:capture-game:9762 - deregister  status: 200
 89115 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-1203 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-1316 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+1203 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+1316 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1843 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1893 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7241a47d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70f59913, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77258e59, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5dcd8c7a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2250b9f2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e3181aa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@253d9f73, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@142269f2]
 5188 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e8c6910c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-6137 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+6137 [main] INFO  RestTest - The following profiles are active: node0
 8793 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 8803 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 8885 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43ms. Found 0 repository interfaces.
@@ -1186,7 +1186,7 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 25290 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 25348 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 25350 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-25354 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 23.307 seconds (JVM running for 27.284)
+25354 [main] INFO  RestTest - Started RestTest in 23.307 seconds (JVM running for 27.284)
 25608 [http-nio-9762-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 25609 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 25641 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 32 ms
@@ -1198,12 +1198,12 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 39112 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 39125 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CAPTURE-GAME/LAPTOP-KULIKOV:capture-game:9762 - deregister  status: 200
 39137 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-552  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-565  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+552  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+565  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1049 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1084 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5609159b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2118cddf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@17a7f733, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@68567e20, org.springframework.test.context.support.DirtiesContextTestExecutionListener@76ed1b7c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@11fc564b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@394a2528, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6236eb5f]
 3123 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9d432a4b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-3896 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+3896 [main] INFO  RestTest - The following profiles are active: node0
 5355 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 5360 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 5408 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
@@ -1257,7 +1257,7 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 17798 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 17837 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 17838 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-17841 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 16.646 seconds (JVM running for 19.171)
+17841 [main] INFO  RestTest - Started RestTest in 16.646 seconds (JVM running for 19.171)
 18027 [http-nio-9762-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 18027 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 18059 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 32 ms
@@ -1269,12 +1269,12 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 22474 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 22478 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CAPTURE-GAME/LAPTOP-KULIKOV:capture-game:9762 - deregister  status: 200
 22489 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-751  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-764  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+751  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+764  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1131 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1162 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5609159b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2118cddf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@17a7f733, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@68567e20, org.springframework.test.context.support.DirtiesContextTestExecutionListener@76ed1b7c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@11fc564b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@394a2528, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6236eb5f]
 4148 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9d432a4b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-4991 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+4991 [main] INFO  RestTest - The following profiles are active: node0
 7348 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 7355 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 7410 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
@@ -1328,7 +1328,7 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 20384 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 20429 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 20431 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-20434 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 19.12 seconds (JVM running for 21.563)
+20434 [main] INFO  RestTest - Started RestTest in 19.12 seconds (JVM running for 21.563)
 20628 [http-nio-9762-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 20628 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 20658 [http-nio-9762-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 30 ms
@@ -1340,12 +1340,12 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 24896 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 24902 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CAPTURE-GAME/LAPTOP-KULIKOV:capture-game:9762 - deregister  status: 200
 24914 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-739  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-755  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+739  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+755  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1117 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1142 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7241a47d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70f59913, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77258e59, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5dcd8c7a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2250b9f2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e3181aa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@253d9f73, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@142269f2]
 3095 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9e2a9261] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-3852 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+3852 [main] INFO  RestTest - The following profiles are active: node0
 5728 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 5733 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 5788 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
@@ -1399,7 +1399,7 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 19580 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 19624 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 19625 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-19629 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 18.404 seconds (JVM running for 20.714)
+19629 [main] INFO  RestTest - Started RestTest in 18.404 seconds (JVM running for 20.714)
 19835 [http-nio-9762-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 19835 [http-nio-9762-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 19874 [http-nio-9762-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 39 ms
@@ -1445,12 +1445,12 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 70057 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 70068 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CAPTURE-GAME/LAPTOP-KULIKOV:capture-game:9762 - deregister  status: 200
 70087 [Thread-8] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-656  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ognio.rest.RestTest], using SpringBootContextLoader
-665  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ognio.rest.RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+656  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RestTest], using SpringBootContextLoader
+665  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
 1096 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 1143 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7241a47d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70f59913, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77258e59, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5dcd8c7a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2250b9f2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e3181aa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@253d9f73, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@142269f2]
 3132 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b3dd01c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-3998 [main] INFO  com.ognio.rest.RestTest - The following profiles are active: node0
+3998 [main] INFO  RestTest - The following profiles are active: node0
 5849 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 5855 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 5913 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
@@ -1504,7 +1504,7 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 20425 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9762"]
 20486 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9762 (http) with context path ''
 20487 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9762
-20492 [main] INFO  com.ognio.rest.RestTest - Started RestTest in 19.248 seconds (JVM running for 21.408)
+20492 [main] INFO  RestTest - Started RestTest in 19.248 seconds (JVM running for 21.408)
 20738 [http-nio-9762-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 20738 [http-nio-9762-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 20780 [http-nio-9762-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 42 ms

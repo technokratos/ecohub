@@ -198,7 +198,7 @@
         </dependencies>
     </dependencyManagement>
     <properties>
-        <start-class>com.ognio.rest.CaptureGameRest</start-class>
+        <start-class>org.ecohub.rest.MainRest</start-class>
 
         <spring-boot-starter-web.version>2.1.7.RELEASE</spring-boot-starter-web.version>
         <java.version>8</java.version>
