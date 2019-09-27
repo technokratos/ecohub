@@ -13,8 +13,8 @@ import org.apache.lucene.util.SloppyMath;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Location {
-    private double latitude;
     private double longitude;
+    private double latitude;
 
     public boolean between(Location fromPoint, Location toPoint) {
         return longitude>= fromPoint.longitude &&
