@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -32,10 +33,11 @@ public class RouteController {
     @Autowired
     private GeoService geoService;
 
-    @RequestMapping
+    @RequestMapping(value = "/insertInRoute", method = RequestMethod.GET)
     public Route findRoute(Route route) {
-        if (route.getPoints().size() == 1) {
-            throw new IllegalStateException("Not valid route");
+        if (route != null || route.getPoints().size() == 1) {
+            logger.warn("Empty params in query");
+            throw new IllegalStateException("Empty params in query");
         }
         double minLong = route.getPoints().stream().min((o1, o2) -> (int) (o1.getLongitude() - o2.getLongitude())).get().getLongitude();
         double minLat = route.getPoints().stream().min((o1, o2) -> (int) (o1.getLatitude() - o2.getLatitude())).get().getLatitude();
