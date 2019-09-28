@@ -24,18 +24,11 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Get a location point in a certain area;
- * Conquer a location point;
- * Show your score;
- *
- */
+
 @Component
 @RestController
 public class OperationController {
 
-    private final static long LEN = 40_008_550;
-    private final static double R15M = 360.0 / LEN;
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     //todo clear with timeout

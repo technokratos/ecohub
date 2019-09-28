@@ -22,5 +22,5 @@ import java.util.List;
 public class Route {
     List<Location> points;
     List<Location> polylines;
-    List<String> title;
+    List<String> titles;
 }

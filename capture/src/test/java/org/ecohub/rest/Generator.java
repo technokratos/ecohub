@@ -13,7 +13,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;
@@ -30,7 +29,13 @@ public class Generator {
         Location base = new Location(55.794742, 49.106220);
         Random r = new Random();
         List<Receiver> receivers = new ArrayList<>();
-        String[] objects = Stream.generate(() -> RandomString.make(3)).limit(5).toArray(String[]::new);
+        String[] objects = new String[]{"organic",
+                "battery",
+                "plastic",
+                "glass",
+                "light",
+                "metal",
+                "paper"};
         AtomicLong idGen = new AtomicLong(0);
         for (int i = 0; i < 2000; i++) {
             double lng= base.getLongitude() + r.nextDouble() - 0.5;

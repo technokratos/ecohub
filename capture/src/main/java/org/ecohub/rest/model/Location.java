@@ -35,4 +35,10 @@ public class Location {
     public Location plus(double v) {
         return new Location(longitude + v, latitude + v);
     }
+
+    public double dist(Location next) {
+        double dLong = next.getLongitude() - longitude;
+        double dLat = next.getLatitude() - latitude;
+        return Math.sqrt(dLong * dLong + dLat * dLat);
+    }
 }
