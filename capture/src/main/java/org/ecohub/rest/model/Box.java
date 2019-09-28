@@ -16,5 +16,5 @@ import java.util.List;
 public class Box {
     private Long id;
     private double load;
-    private String trashTypes;
+    private String type;
 }
