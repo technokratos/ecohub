@@ -21,4 +21,5 @@ public class Receiver {
 
     private Location location;
     private List<String> trashTypes;
+    private boolean isCanConfirm;
 }

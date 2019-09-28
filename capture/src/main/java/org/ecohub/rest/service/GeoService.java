@@ -13,7 +13,9 @@ import java.util.List;
 public interface GeoService {
     List<Receiver> getReceivers(Area area);
 
-    List<TrashOperation> getHistory(String clientId);
+    List<TrashOperation> getHistory(Long clientId);
 
-    void addOperation(String clientId, TrashOperation trashOperation);
+    void addOperation(Long clientId, TrashOperation trashOperation);
+
+    Receiver getReceiverById(Long trashId);
 }

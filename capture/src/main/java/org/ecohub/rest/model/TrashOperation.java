@@ -14,12 +14,12 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TrashOperation {
-    private String id;
-    private String clientId;
+    private Long id;
+    private Long clientId;
+    private Long receiverId;
     private ZonedDateTime time;
     private TrashStatus status;
-    private Long latitude;
-    private Long longitude;
+    private Location location;
     private double weight;
     private String type;
 }

@@ -20,6 +20,20 @@ import java.util.List;
  * Get a location point in a certain area;
  * Conquer a location point;
  * Show your score;
+ *
+ * @startuml
+ * client -> server : TrashOperationRequest
+ * server -> client : TrashStatus
+ * client -> receiver : put trash
+ * receiver -> server : TrashOperationConfirm
+ * client -> server : OperationStatusRequest
+ * server -> client : TrashStatus
+ * === Without confirmation ==
+ * client -> server : TrashOperationRequest
+ * server -> client : TrashStatus
+ * client -> receiver : put trash
+ *
+ * @enduml
  */
 @Component
 @RestController
@@ -32,13 +46,13 @@ public class ReceiverController {
 
 
     @RequestMapping(value = "/history/{clientId}", method = RequestMethod.GET)
-    public List<TrashOperation> getHistory(String clientId) {
+    public List<TrashOperation> getHistory(Long clientId) {
         return geoService.getHistory(clientId);
     }
 
 
     @RequestMapping(value = "/findReceiver", method = RequestMethod.POST)
-    public List<Receiver> findReceivers(@Valid @RequestBody Area area){
+    public List<Receiver> findReceivers(@Valid @RequestBody Area area) {
         logger.debug("Get location with area : {}", area);
         return geoService.getReceivers(area);
     }
@@ -47,13 +61,14 @@ public class ReceiverController {
     public List<Receiver> getReceiver(@RequestParam Double fromLong,
                                       @RequestParam Double toLong,
                                       @RequestParam Double fromLat,
-                                      @RequestParam Double toLat){
+                                      @RequestParam Double toLat) {
         Area area = new Area();
         area.setFrom(new Location(fromLong, fromLat));
         area.setTo(new Location(toLong, toLat));
         logger.debug("Get location with area : {}", area);
         return geoService.getReceivers(area);
     }
+
 
 
 

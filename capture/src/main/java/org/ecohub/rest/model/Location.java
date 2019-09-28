@@ -10,11 +10,15 @@ import org.apache.lucene.util.SloppyMath;
  * date: 23.08.2019:19:38<br/>
  */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 public class Location {
-    private double longitude;
-    private double latitude;
+    private final double longitude;
+    private final double latitude;
+
+    public Location() {
+        longitude = 0;
+        latitude = 0;
+    }
 
     public boolean between(Location fromPoint, Location toPoint) {
         return longitude>= fromPoint.longitude &&
@@ -26,5 +30,9 @@ public class Location {
     public boolean near(Location basePoint, int conquerRadius) {
         double dist = SloppyMath.haversinMeters(latitude, longitude, basePoint.latitude, basePoint.longitude);
         return  dist <= conquerRadius;
+    }
+
+    public Location plus(double v) {
+        return new Location(longitude + v, latitude + v);
     }
 }

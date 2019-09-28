@@ -12,9 +12,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -31,7 +29,7 @@ public class MemoryGeoServiceImpl implements GeoService {
     @Qualifier("initReceiverCollection")
     private List<Receiver> receivers;
 
-    private Map<String, List<TrashOperation>> clientOperationMap;
+    private Map<Long, List<TrashOperation>> clientOperationMap = new HashMap<>();
 
     @Override
     public List<Receiver> getReceivers(Area area) {
@@ -41,14 +39,19 @@ public class MemoryGeoServiceImpl implements GeoService {
     }
 
     @Override
-    public List<TrashOperation> getHistory(String clientId) {
-        return clientOperationMap.get(clientId);
+    public List<TrashOperation> getHistory(Long clientId) {
+        return clientOperationMap.getOrDefault(clientId, Collections.emptyList());
     }
 
     @Override
-    public void addOperation(String clientId, TrashOperation trashOperation) {
+    public void addOperation(Long clientId, TrashOperation trashOperation) {
         List<TrashOperation> trashOperations = clientOperationMap.computeIfAbsent(clientId, s -> new ArrayList<>());
         trashOperations.add(trashOperation);
+    }
+
+    @Override
+    public Receiver getReceiverById(Long trashId) {
+        return receivers.stream().filter(receiver -> Objects.equals(trashId,receiver.getId())).findFirst().orElseGet(() -> null);
     }
 
 

@@ -37,7 +37,7 @@ public class Generator {
             if( r.nextDouble()> 0.4){
                 type.add(objects[r.nextInt(objects.length)]);
             }
-            Receiver receiver = new Receiver((long)i, ReceiverType.BOX, r.nextDouble(), new Location(lat, lng), Arrays.asList());
+            Receiver receiver = new Receiver((long)i, ReceiverType.BOX, r.nextDouble(), new Location(lat, lng), Arrays.asList(), true);
             receivers.add(receiver);
         }
 
