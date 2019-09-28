@@ -58,10 +58,10 @@ public class ReceiverController {
     }
 
     @RequestMapping(value = "/findReceiver/{fromLong}/{toLong}/{fromLat}/{toLat}", method = RequestMethod.GET)
-    public List<Receiver> getReceiver(@RequestParam Double fromLong,
-                                      @RequestParam Double toLong,
-                                      @RequestParam Double fromLat,
-                                      @RequestParam Double toLat) {
+    public List<Receiver> getReceiver(@PathVariable Double fromLong,
+                                      @PathVariable Double toLong,
+                                      @PathVariable Double fromLat,
+                                      @PathVariable Double toLat) {
         Area area = new Area();
         area.setFrom(new Location(fromLong, fromLat));
         area.setTo(new Location(toLong, toLat));
