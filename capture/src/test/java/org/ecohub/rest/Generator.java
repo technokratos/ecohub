@@ -35,12 +35,7 @@ public class Generator {
         for (int i = 0; i < 2000; i++) {
             double lng= base.getLongitude() + r.nextDouble() - 0.5;
             double lat = base.getLatitude() + r.nextDouble() -0.5;
-            List<String> type = new ArrayList<>();
-            type.add(objects[r.nextInt(objects.length)]);
-            if( r.nextDouble()> 0.4){
-                type.add(objects[r.nextInt(objects.length)]);
-            }
-            List<Box> boxes = Stream.generate(() -> new Box(idGen.incrementAndGet(), r.nextDouble(), Collections.singletonList(objects[r.nextInt(objects.length)])))
+            List<Box> boxes = Stream.generate(() -> new Box(idGen.incrementAndGet(), r.nextDouble(), objects[r.nextInt(objects.length)]))
                     .limit(r.nextInt(4)).collect(Collectors.toList());
             Receiver receiver = new Receiver(idGen.incrementAndGet(), ReceiverType.BOX,  new Location(lat, lng), true, boxes);
             receivers.add(receiver);
