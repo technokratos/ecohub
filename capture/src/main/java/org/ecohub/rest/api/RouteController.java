@@ -5,11 +5,13 @@ import org.ecohub.rest.api.data.Area;
 import org.ecohub.rest.api.data.Route;
 import org.ecohub.rest.model.Location;
 import org.ecohub.rest.model.Receiver;
+import org.ecohub.rest.route.RouteService;
 import org.ecohub.rest.service.GeoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,19 +35,22 @@ public class RouteController {
     @Autowired
     private GeoService geoService;
 
-    @RequestMapping(value = "/insertInRoute", method = RequestMethod.GET)
-    public Route findRoute(Route route) {
-        if (route != null || route.getPoints().size() == 1) {
+    @Autowired
+    private RouteService routeService;
+
+    @RequestMapping(value = "/insertInRoute", method = RequestMethod.POST    )
+    public Route findRoute(@RequestBody Route route) {
+        if (route == null || route.getPoints().size() == 1) {
             logger.warn("Empty params in query");
             throw new IllegalStateException("Empty params in query");
         }
-        double minLong = route.getPoints().stream().min((o1, o2) -> (int) (o1.getLongitude() - o2.getLongitude())).get().getLongitude();
-        double minLat = route.getPoints().stream().min((o1, o2) -> (int) (o1.getLatitude() - o2.getLatitude())).get().getLatitude();
+        double minLong = route.getPoints().stream().min((o1, o2) -> (int) Math.signum(o1.getLongitude() - o2.getLongitude())).get().getLongitude();
+        double minLat = route.getPoints().stream().min((o1, o2) -> (int) Math.signum(o1.getLongitude() - o2.getLongitude())).get().getLatitude();
 
-        double maxLong = route.getPoints().stream().max((o1, o2) -> (int) (o1.getLongitude() - o2.getLongitude())).get().getLongitude();
-        double maxLat = route.getPoints().stream().max((o1, o2) -> (int) (o1.getLatitude() - o2.getLatitude())).get().getLatitude();
+        double maxLong = route.getPoints().stream().max((o1, o2) -> (int) Math.signum(o1.getLongitude() - o2.getLongitude())).get().getLongitude();
+        double maxLat = route.getPoints().stream().max((o1, o2) -> (int) Math.signum(o1.getLongitude() - o2.getLongitude())).get().getLatitude();
 
-        double dLong = maxLong - minLat;
+        double dLong = maxLong - minLong;
         double dLat = maxLat - minLat;
         double radius = Math.sqrt(dLong * dLong + dLat * dLat);
         double midLong = (maxLong + minLong)/2;
@@ -59,16 +64,36 @@ public class RouteController {
         if (receivers == null) {
             throw new IllegalStateException("Not found receivers");
         }
+        if (receivers.isEmpty()) {
+            logger.info("Not found recevier for route" + route);
+            return route;
+        }
 
         List<Pair<Route, Double>> routeWithDelta = findRoutesWithDelta(route, receivers);
 
         Optional<Pair<Route, Double>> min = routeWithDelta.stream().min((o1, o2) -> (int) (o1.getRight() - o2.getRight()));
         if (min.isPresent()) {
-            return min.get().getLeft();
+            return insertPolylines(min.get().getLeft());
         } else {
             throw new IllegalStateException("Impossible");
         }
 
+    }
+
+    private Route insertPolylines(Route route) {
+        List<Location> polylines = new ArrayList<>();
+        for (int i = 0; i < route.getPoints().size() - 1; i++) {
+            Location current = route.getPoints().get(i);
+            Location next = route.getPoints().get(i+1);
+            List<Location> subPolylines = routeService.getRoute(current, next);
+            if (i< route.getPoints().size() - 1) {
+                //remove last to exclude duplicate
+                subPolylines.remove(subPolylines.size() -1);
+            }
+            polylines.addAll(subPolylines);
+        }
+        route.setPolylines(polylines);
+        return route;
     }
 
     private List<Pair<Route, Double>> findRoutesWithDelta(Route route, List<Receiver> receivers) {
@@ -92,6 +117,10 @@ public class RouteController {
                 minDelta = delta;
                 indexMinDelta = i;
             }
+        }
+        //insert after found location
+        if (indexMinDelta != route.getPoints().size() - 1) {
+            indexMinDelta ++;
         }
         ArrayList<Location> locations = new ArrayList<>(route.getPoints());
         final List<String> titles;

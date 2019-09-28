@@ -3,6 +3,7 @@ package org.ecohub.rest.api.data;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.ecohub.rest.model.Location;
 
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.List;
  * date: 28.09.2019:11:18<br/>
  */
 @Data
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 

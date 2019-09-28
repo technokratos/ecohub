@@ -37,7 +37,7 @@ public class Generator {
                 "metal",
                 "paper"};
         AtomicLong idGen = new AtomicLong(0);
-        for (int i = 0; i < 2000; i++) {
+        for (int i = 0; i < 100; i++) {
             double lng= base.getLongitude() + r.nextDouble() - 0.5;
             double lat = base.getLatitude() + r.nextDouble() -0.5;
             List<Box> boxes = Stream.generate(() -> new Box(idGen.incrementAndGet(), r.nextDouble(), objects[r.nextInt(objects.length)]))

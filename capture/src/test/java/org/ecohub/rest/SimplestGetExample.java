@@ -1,8 +1,14 @@
 package org.ecohub.rest;
  
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.io.IOUtils;
+import org.apache.http.impl.client.RoutedRequest;
+import org.ecohub.rest.route.api.RouteResponse;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.IOException;
 import java.util.Arrays;
 
 public class SimplestGetExample {
@@ -42,7 +48,7 @@ public class SimplestGetExample {
     static final String URL_EMPLOYEES_JSON = "http://localhost:8080/employees.json";
     private static RestTemplate restTemplate;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         restTemplate = new RestTemplate();
  
@@ -51,15 +57,29 @@ public class SimplestGetExample {
 
 
         /**
-         * 52.5,13.4
-         * &waypoint1=geo!52.5,13.45
+         * "latitude": 55.320,
+         *                 "longitude": 49.260
+         *     },
+         *     {
+         *         "latitude": 56.923,
+         *             "longitude": 49.9
+         *
          */
-        double fromLat = 52.5;
-        double fromLong = 13.4;
-        double toLat = 52.5;
-        double toLong = 13.45;
+
+        double fromLat = 55.320;
+        double fromLong = 49.260;
+        double toLat = 56.923;
+        double toLong = 49.9;
+
+//        double fromLat = 52.5;
+//        double fromLong = 13.4;
+//        double toLat = 52.5;
+//        double toLong = 13.45;
         String result1 = getRoute(fromLat, fromLong, toLat, toLong);
 
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        RouteResponse routedRequest = mapper.readValue(IOUtils.toInputStream(result1), RouteResponse.class);
         System.out.println(result1);
     }
 

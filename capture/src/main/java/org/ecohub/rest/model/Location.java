@@ -3,6 +3,7 @@ package org.ecohub.rest.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.apache.lucene.util.SloppyMath;
 
 /**
@@ -10,6 +11,7 @@ import org.apache.lucene.util.SloppyMath;
  * date: 23.08.2019:19:38<br/>
  */
 @Data
+@ToString
 @AllArgsConstructor
 public class Location {
     private final double longitude;

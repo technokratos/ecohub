@@ -1,0 +1,142 @@
+{
+  "response": {
+    "metaInfo": {
+      "timestamp": "2019-09-28T16:15:25Z",
+      "mapVersion": "8.30.100.154",
+      "moduleVersion": "7.2.201938-5315",
+      "interfaceVersion": "2.6.70",
+      "availableMapVersion": [
+        "8.30.100.154"
+      ]
+    },
+    "route": [
+      {
+        "waypoint": [
+          {
+            "linkId": "+950539996",
+            "mappedPosition": {
+              "latitude": 55.3156511,
+              "longitude": 49.2558152
+            },
+            "originalPosition": {
+              "latitude": 55.3199999,
+              "longitude": 49.2599999
+            },
+            "type": "stopOver",
+            "spot": 0.2129487,
+            "sideOfStreet": "neither",
+            "mappedRoadName": "",
+            "label": "",
+            "shapeIndex": 0,
+            "source": "user"
+          },
+          {
+            "linkId": "+950539996",
+            "mappedPosition": {
+              "latitude": 55.3154637,
+              "longitude": 49.256404
+            },
+            "originalPosition": {
+              "latitude": 55.3207298,
+              "longitude": 49.2614716
+            },
+            "type": "stopOver",
+            "spot": 0.2203332,
+            "sideOfStreet": "neither",
+            "mappedRoadName": "",
+            "label": "",
+            "shapeIndex": 1,
+            "source": "user"
+          }
+        ],
+        "mode": {
+          "type": "fastest",
+          "transportModes": [
+            "car"
+          ],
+          "trafficMode": "disabled",
+          "feature": []
+        },
+        "leg": [
+          {
+            "start": {
+              "linkId": "+950539996",
+              "mappedPosition": {
+                "latitude": 55.3156511,
+                "longitude": 49.2558152
+              },
+              "originalPosition": {
+                "latitude": 55.3199999,
+                "longitude": 49.2599999
+              },
+              "type": "stopOver",
+              "spot": 0.2129487,
+              "sideOfStreet": "neither",
+              "mappedRoadName": "",
+              "label": "",
+              "shapeIndex": 0,
+              "source": "user"
+            },
+            "end": {
+              "linkId": "+950539996",
+              "mappedPosition": {
+                "latitude": 55.3154637,
+                "longitude": 49.256404
+              },
+              "originalPosition": {
+                "latitude": 55.3207298,
+                "longitude": 49.2614716
+              },
+              "type": "stopOver",
+              "spot": 0.2203332,
+              "sideOfStreet": "neither",
+              "mappedRoadName": "",
+              "label": "",
+              "shapeIndex": 1,
+              "source": "user"
+            },
+            "length": 43,
+            "travelTime": 7,
+            "maneuver": [
+              {
+                "position": {
+                  "latitude": 55.3156511,
+                  "longitude": 49.2558152
+                },
+                "instruction": "Head <span class=\"heading\">southeast</span>. <span class=\"distance-description\">Go for <span class=\"length\">43 m</span>.</span>",
+                "travelTime": 7,
+                "length": 43,
+                "id": "M1",
+                "_type": "PrivateTransportManeuverType"
+              },
+              {
+                "position": {
+                  "latitude": 55.3154637,
+                  "longitude": 49.256404
+                },
+                "instruction": "Arrive at your destination.",
+                "travelTime": 0,
+                "length": 0,
+                "id": "M2",
+                "_type": "PrivateTransportManeuverType"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "distance": 43,
+          "trafficTime": 7,
+          "baseTime": 7,
+          "flags": [
+            "dirtRoad",
+            "noThroughRoad"
+          ],
+          "text": "The trip takes <span class=\"length\">43 m</span> and less than <span class=\"time\">1 min</span>.",
+          "travelTime": 7,
+          "_type": "RouteSummaryType"
+        }
+      }
+    ],
+    "language": "en-us"
+  }
+}

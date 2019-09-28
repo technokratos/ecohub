@@ -12,44 +12,51 @@ import java.util.List;
  */
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class RouteResponse {
     private Response response;
 
     @Data
     @NoArgsConstructor
+    @AllArgsConstructor
     public static class Response {
-        Route route;
+        List<Route> route;
     }
 
     @Data
     @NoArgsConstructor
+    @AllArgsConstructor
     public static class Route {
-        private Leg leg;
+        private List<Leg> leg;
         private Summary summary;
 
     }
 
     @Data
     @NoArgsConstructor
+    @AllArgsConstructor
     public static class Leg {
         private List<Maneuver> maneuver;
     }
 
     @Data
     @NoArgsConstructor
+    @AllArgsConstructor
     public static class Maneuver {
         private Position position;
     }
 
     @Data
+    @NoArgsConstructor
     @AllArgsConstructor
     public static class Position {
-        private final double latitude;
-        private final double longitude;
+        private double latitude;
+        private double longitude;
     }
 
     @Data
     @NoArgsConstructor
+    @AllArgsConstructor
     public static class Summary {
         Long distance;
         Long trafficTime;

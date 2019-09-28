@@ -41,11 +41,13 @@ public class RouteService {
         IOUtils.toInputStream(route,  Charset.defaultCharset());
         try {
             RouteResponse routeResponse = mapper.readValue(new StringReader(route), RouteResponse.class);
-            return routeResponse.getResponse().getRoute().getLeg().getManeuver().stream()
+            RouteResponse.Route detailRoute = routeResponse.getResponse().getRoute().get(0);
+            RouteResponse.Leg leg = detailRoute.getLeg().get(0);
+            return leg.getManeuver().stream()
                     .map(RouteResponse.Maneuver::getPosition)
                     .map(p -> new Location(p.getLongitude(), p.getLatitude())).collect(Collectors.toList());
 
-        } catch (IOException e) {
+        } catch (Exception e) {
             logger.error("Error in find route" + from + to, e);
         }
         return Collections.emptyList();
