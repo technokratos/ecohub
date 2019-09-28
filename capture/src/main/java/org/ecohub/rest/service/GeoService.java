@@ -2,9 +2,11 @@ package org.ecohub.rest.service;
 
 import org.ecohub.rest.api.data.Area;
 import org.ecohub.rest.model.Receiver;
+import org.ecohub.rest.model.TrashClient;
 import org.ecohub.rest.model.TrashOperation;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author Denis B. Kulikov<br/>
@@ -18,4 +20,8 @@ public interface GeoService {
     void addOperation(Long clientId, TrashOperation trashOperation);
 
     Receiver getReceiverById(Long trashId);
+
+    TrashClient getClientById(Long id);
+
+    Optional<Receiver> getReceiverByBoxId(Long boxId);
 }

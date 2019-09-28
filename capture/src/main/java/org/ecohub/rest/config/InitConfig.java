@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.ecohub.rest.model.Receiver;
 import org.ecohub.rest.api.data.ReceiverCollection;
+import org.ecohub.rest.model.TrashClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -21,6 +22,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
+import java.util.stream.Stream;
 
 @Configuration
 public class InitConfig {
@@ -40,5 +46,15 @@ public class InitConfig {
             logger.error("Not load default values", e);
             return Collections.emptyList();
         }
+    }
+
+    @Bean
+    @Qualifier("clientCache")
+    public Map<Long, TrashClient> clientCache() {
+        return LongStream.iterate(1, operand -> operand + 1)
+                .limit(5)
+                .mapToObj(index -> new TrashClient(index, 0.0))
+                .collect(Collectors.toMap(TrashClient::getId,
+                trashClient -> trashClient));
     }
 }

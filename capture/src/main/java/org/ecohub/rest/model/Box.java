@@ -8,15 +8,13 @@ import java.util.List;
 
 /**
  * @author Denis B. Kulikov<br/>
- * date: 27.09.2019:20:15<br/>
+ * date: 28.09.2019:11:52<br/>
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Receiver {
+public class Box {
     private Long id;
-    private ReceiverType type;
-    private Location location;
-    private boolean isCanConfirm;
-    List<Box> boxes;
+    private double load;
+    private List<String> trashTypes;
 }

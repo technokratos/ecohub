@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class TrashOperationСonfirm {
-    private final Long receiverId;
+    private final Long boxId;
     private final String type;
     private final Double weight;
 }

@@ -2,6 +2,7 @@ package org.ecohub.rest.service.impl;
 
 import org.ecohub.rest.api.data.Area;
 import org.ecohub.rest.model.Receiver;
+import org.ecohub.rest.model.TrashClient;
 import org.ecohub.rest.model.TrashOperation;
 import org.ecohub.rest.service.GeoService;
 import org.ecohub.rest.service.conditional.SingleCondition;
@@ -29,6 +30,10 @@ public class MemoryGeoServiceImpl implements GeoService {
     @Qualifier("initReceiverCollection")
     private List<Receiver> receivers;
 
+    @Autowired
+    @Qualifier("clientCache")
+    private Map<Long, TrashClient> clientCache;
+
     private Map<Long, List<TrashOperation>> clientOperationMap = new HashMap<>();
 
     @Override
@@ -54,5 +59,13 @@ public class MemoryGeoServiceImpl implements GeoService {
         return receivers.stream().filter(receiver -> Objects.equals(trashId,receiver.getId())).findFirst().orElseGet(() -> null);
     }
 
+    @Override
+    public TrashClient getClientById(Long id) {
+        return clientCache.get(id);
+    }
 
+    @Override
+    public Optional<Receiver> getReceiverByBoxId(Long boxId) {
+        return receivers.stream().filter(receiver -> receiver.getBoxes().stream().anyMatch(box -> box.getId().equals(boxId))).findFirst();
+    }
 }
