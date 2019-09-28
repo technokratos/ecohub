@@ -13,7 +13,6 @@ import org.ecohub.rest.model.Location;
 public class TrashOperationRequest {
     private final Long  clientId;
     private final Long receiverId;
-    private final Location location;
     private final String type;
 
 }

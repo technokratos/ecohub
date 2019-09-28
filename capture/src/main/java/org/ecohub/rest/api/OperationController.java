@@ -52,18 +52,16 @@ public class OperationController {
         Receiver receiverById = geoService.getReceiverById(request.getReceiverId());
         Long clientId = request.getClientId();
 
-        if (receiverById == null && request.getLocation() == null) {
-            throw new IllegalStateException("need or location receiver");
-        }
         if (receiverById == null) {
-            Location location = request.getLocation();
-            Location from  = location.plus(-R15M);
-            Location to = location.plus(R15M);
-            List<Receiver> receivers = geoService.getReceivers(new Area(from, to, null, null));
-            if (receivers.isEmpty()) {
-                throw new IllegalStateException("Not found receiver");
-            }
-            receiverById = receivers.get(0);
+            throw new IllegalStateException("Not found receiver");
+//            Location location = request.getLocation();
+//            Location from  = location.plus(-R15M);
+//            Location to = location.plus(R15M);
+//            List<Receiver> receivers = geoService.getReceivers(new Area(from, to, null, null));
+//            if (receivers.isEmpty()) {
+//                throw new IllegalStateException("Not found receiver");
+//            }
+//            receiverById = receivers.get(0);
         }
 
         TrashOperation trashOperation = new TrashOperation(null, clientId, receiverById.getId(), ZonedDateTime.now(), TrashStatus.NO_CONFIRMED, receiverById.getLocation(), 0.0, request.getType() );
@@ -84,6 +82,7 @@ public class OperationController {
         Receiver receiverById = geoService.getReceiverById(confirmer.getReceiverId());
         TrashOperation trashOperation = clientOperationMap.get(receiverById.getId());
         if (trashOperation != null) {
+            trashOperation.setType(confirmer.getType());
             trashOperation.setStatus(TrashStatus.IN_BOX);
             geoService.addOperation(trashOperation.getClientId(), trashOperation);
         }

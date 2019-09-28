@@ -45,7 +45,7 @@ public class ReceiverController {
     private GeoService geoService;
 
 
-    @RequestMapping(value = "/history/{clientId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/history", method = RequestMethod.GET)
     public List<TrashOperation> getHistory(Long clientId) {
         return geoService.getHistory(clientId);
     }

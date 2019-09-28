@@ -11,4 +11,6 @@ import lombok.Data;
 @AllArgsConstructor
 public class TrashOperationСonfirm {
     private final Long receiverId;
+    private final String type;
+    private final Double weight;
 }
