@@ -1,7 +1,7 @@
 package org.ecohub.rest.config;
 
 
-import org.ecohub.rest.api.data.ReceiverCollection;
+import org.ecohub.rest.model.Receiver;
 import org.ecohub.rest.service.conditional.ClusterCondition;
 import org.ecohub.rest.service.impl.MemoryGeoServiceImpl;
 import org.slf4j.Logger;
@@ -20,6 +20,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericToStringSerializer;
 
 import java.nio.charset.Charset;
+import java.util.List;
 
 /**
  * @author Denis B. Kulikov<br/>
@@ -40,7 +41,7 @@ public class RedisConfig {
 
     @Autowired
     @Qualifier("initReceiverCollection")
-    private ReceiverCollection receiverCollection;
+    private List<Receiver> receivers;
 
 
     @Bean
@@ -66,7 +67,7 @@ public class RedisConfig {
         GeoOperations<String, Object> geoOperations = template.opsForGeo();
 
 
-        receiverCollection.getReceivers().stream()
+        receivers.stream()
                 .forEach(g->
                         geoOperations.add("receivers", new Point(g.getLocation().getLongitude(), g.getLocation().getLatitude()), Long.toString(g.getId())));
 

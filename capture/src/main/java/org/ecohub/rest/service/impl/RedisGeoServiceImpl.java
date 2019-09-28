@@ -1,27 +1,71 @@
 package org.ecohub.rest.service.impl;
 
+import cn.yueshutong.redislock.RedisLock;
+import org.ecohub.rest.api.data.Area;
+import org.ecohub.rest.model.Receiver;
+import org.ecohub.rest.model.TrashClient;
+import org.ecohub.rest.model.TrashOperation;
+import org.ecohub.rest.service.GeoService;
 import org.ecohub.rest.service.conditional.ClusterCondition;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Conditional;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
 
 /**
  * @author Denis B. Kulikov<br/>
  * date: 24.08.2019:20:29<br/>
  */
-@Service
-@Conditional(ClusterCondition.class)
-public class RedisGeoServiceImpl //implements GeoService
+//@Service
+//@Conditional(ClusterCondition.class)
+public class RedisGeoServiceImpl implements GeoService
 {
-//    private static Logger logger = LoggerFactory.getLogger(RedisGeoServiceImpl.class);
-//
-//    public static final String CONQUER_LOCK = "conquer_lock";
-//    @Autowired
-//    private RedisLock lock;
-//
-//    @Autowired
-//    private RedisTemplate<String, Object> redisTemplate;
-//    @Value("${conquer.radius:15}")
-//    private int conquerRadius;
+    private static Logger logger = LoggerFactory.getLogger(RedisGeoServiceImpl.class);
+
+    public static final String CONQUER_LOCK = "conquer_lock";
+    @Autowired
+    private RedisLock lock;
+
+    @Autowired
+    private RedisTemplate<String, Object> redisTemplate;
+    @Value("${conquer.radius:15}")
+    private int conquerRadius;
+
+    @Override
+    public List<Receiver> getReceivers(Area area) {
+        return null;
+    }
+
+    @Override
+    public List<TrashOperation> getHistory(Long clientId) {
+        return null;
+    }
+
+    @Override
+    public void addOperation(Long clientId, TrashOperation trashOperation) {
+
+    }
+
+    @Override
+    public Receiver getReceiverById(Long trashId) {
+        return null;
+    }
+
+    @Override
+    public TrashClient getClientById(Long id) {
+        return null;
+    }
+
+    @Override
+    public Optional<Receiver> getReceiverByBoxId(Long boxId) {
+        return Optional.empty();
+    }
 //
 //    @Override
 //    public FeatureCollection getReceivers(Point from, Point to) {

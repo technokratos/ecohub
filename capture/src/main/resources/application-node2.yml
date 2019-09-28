@@ -11,5 +11,5 @@ eureka:
   instance:
     preferIpAddress: true
 redis:
-  host: localhost
+  host: 84.201.165.19
   port: 6379
