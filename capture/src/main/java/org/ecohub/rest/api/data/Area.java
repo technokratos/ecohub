@@ -1,9 +1,11 @@
-package org.ecohub.rest.model;
+package org.ecohub.rest.api.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.ecohub.rest.api.validation.AreaAnnotation;
+import org.ecohub.rest.model.Location;
+import org.ecohub.rest.model.ReceiverType;
 
 @Data
 @NoArgsConstructor

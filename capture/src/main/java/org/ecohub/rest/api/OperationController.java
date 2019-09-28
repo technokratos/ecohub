@@ -14,7 +14,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.ZonedDateTime;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -64,7 +63,7 @@ public class OperationController {
 //            receiverById = receivers.get(0);
         }
 
-        TrashOperation trashOperation = new TrashOperation(null, clientId, receiverById.getId(), ZonedDateTime.now(), TrashStatus.NO_CONFIRMED, receiverById.getLocation(), 0.0, request.getType() );
+        TrashOperation trashOperation = new TrashOperation(null, clientId, receiverById.getId(), ZonedDateTime.now(), TrashStatus.UN_CONFIRMED, receiverById.getLocation(), 0.0, request.getType() );
 
         if (receiverById.isCanConfirm()) {
             clientOperationMap.put( receiverById.getId(), trashOperation);

@@ -1,8 +1,9 @@
-package org.ecohub.rest.model;
+package org.ecohub.rest.api.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.ecohub.rest.model.Receiver;
 
 import java.util.List;
 

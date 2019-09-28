@@ -1,6 +1,6 @@
 package org.ecohub.rest.api.validation;
 
-import org.ecohub.rest.model.Area;
+import org.ecohub.rest.api.data.Area;
 import org.ecohub.rest.model.Location;
 
 import javax.validation.ConstraintValidator;

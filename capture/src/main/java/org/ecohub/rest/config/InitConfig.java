@@ -8,7 +8,7 @@ package org.ecohub.rest.config;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.ecohub.rest.model.Receiver;
-import org.ecohub.rest.model.ReceiverCollection;
+import org.ecohub.rest.api.data.ReceiverCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;

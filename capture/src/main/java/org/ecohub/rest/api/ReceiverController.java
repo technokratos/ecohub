@@ -2,7 +2,7 @@
 package org.ecohub.rest.api;
 
 
-import org.ecohub.rest.model.Area;
+import org.ecohub.rest.api.data.Area;
 import org.ecohub.rest.model.Location;
 import org.ecohub.rest.model.Receiver;
 import org.ecohub.rest.model.TrashOperation;

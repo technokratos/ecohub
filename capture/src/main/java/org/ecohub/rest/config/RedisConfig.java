@@ -1,7 +1,7 @@
 package org.ecohub.rest.config;
 
 
-import org.ecohub.rest.model.ReceiverCollection;
+import org.ecohub.rest.api.data.ReceiverCollection;
 import org.ecohub.rest.service.conditional.ClusterCondition;
 import org.ecohub.rest.service.impl.MemoryGeoServiceImpl;
 import org.slf4j.Logger;

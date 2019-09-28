@@ -5,11 +5,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import net.bytebuddy.utility.RandomString;
 import org.ecohub.rest.model.Location;
 import org.ecohub.rest.model.Receiver;
-import org.ecohub.rest.model.ReceiverCollection;
+import org.ecohub.rest.api.data.ReceiverCollection;
 import org.ecohub.rest.model.ReceiverType;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;

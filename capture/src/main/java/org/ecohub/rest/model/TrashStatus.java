@@ -6,7 +6,7 @@ package org.ecohub.rest.model;
  */
 public enum TrashStatus {
     UNKNOWN,
-    NO_CONFIRMED,
+    UN_CONFIRMED,
     IN_BOX,
     MOVING,
     PROCESSING,
