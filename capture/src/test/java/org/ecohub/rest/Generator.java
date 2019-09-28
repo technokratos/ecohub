@@ -40,8 +40,10 @@ public class Generator {
         for (int i = 0; i < 100; i++) {
             double lng= base.getLongitude() + r.nextDouble() - 0.5;
             double lat = base.getLatitude() + r.nextDouble() -0.5;
-            List<Box> boxes = Stream.generate(() -> new Box(idGen.incrementAndGet(), r.nextDouble(), objects[r.nextInt(objects.length)]))
-                    .limit(r.nextInt(4)).collect(Collectors.toList());
+            List<Box> boxes = Stream.of(objects)
+                    .filter(v-> r.nextBoolean())
+                    .limit(1 + r.nextInt(6))
+                    .map(v->  new Box(idGen.incrementAndGet(), r.nextDouble(), v)).collect(Collectors.toList());
             Receiver receiver = new Receiver(idGen.incrementAndGet(), ReceiverType.BOX,  new Location(lat, lng), true, boxes);
             receivers.add(receiver);
         }
@@ -51,6 +53,6 @@ public class Generator {
 
         mapper.writeValue(new FileOutputStream("capture\\src\\main\\resources\\data.json"), new ReceiverCollection(receivers));
 
-        ReceiverCollection list = mapper.readValue((new FileInputStream("temp.json")), ReceiverCollection.class);
+        //ReceiverCollection list = mapper.readValue((new FileInputStream("temp.json")), ReceiverCollection.class);
     }
 }

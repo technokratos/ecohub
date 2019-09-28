@@ -1,6 +1,8 @@
 package org.ecohub.rest.config;
 
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.ecohub.rest.model.Receiver;
 import org.ecohub.rest.service.conditional.ClusterCondition;
 import org.ecohub.rest.service.impl.MemoryGeoServiceImpl;
@@ -19,6 +21,7 @@ import org.springframework.data.redis.core.GeoOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericToStringSerializer;
 
+import java.io.StringWriter;
 import java.nio.charset.Charset;
 import java.util.List;
 
@@ -42,6 +45,11 @@ public class RedisConfig {
     @Autowired
     @Qualifier("initReceiverCollection")
     private List<Receiver> receivers;
+    private ObjectMapper mapper = new ObjectMapper();
+    {
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    }
+
 
 
     @Bean
@@ -65,11 +73,19 @@ public class RedisConfig {
 
     private void initFirstValue(RedisTemplate<String, Object> template) {
         GeoOperations<String, Object> geoOperations = template.opsForGeo();
-
-
         receivers.stream()
-                .forEach(g->
-                        geoOperations.add("receivers", new Point(g.getLocation().getLongitude(), g.getLocation().getLatitude()), Long.toString(g.getId())));
+                .forEach(r->
+                        geoOperations.add("receivers", new Point(r.getLocation().getLongitude(), r.getLocation().getLatitude()), receiverToJson(r)));
 
+    }
+
+    private String receiverToJson(Receiver receiver)  {
+        try {
+            StringWriter writer = new StringWriter();
+            mapper.writeValue(writer, receiver);
+            return writer.toString();
+        } catch (Exception e) {
+            throw new IllegalStateException(e);
+        }
     }
 }

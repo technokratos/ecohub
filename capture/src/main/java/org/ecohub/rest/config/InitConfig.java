@@ -10,6 +10,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.ecohub.rest.model.Receiver;
 import org.ecohub.rest.api.data.ReceiverCollection;
 import org.ecohub.rest.model.TrashClient;
+import org.ecohub.rest.model.TrashOperation;
+import org.ecohub.rest.model.TrashStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,9 +22,12 @@ import org.springframework.util.ResourceUtils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.ZonedDateTime;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
@@ -57,4 +62,21 @@ public class InitConfig {
                 .collect(Collectors.toMap(TrashClient::getId,
                 trashClient -> trashClient));
     }
+
+    @Bean
+    @Qualifier("initTrashOperation")
+    public List<TrashOperation> initTrashOperation(){
+        List<Receiver> receivers = receiverCollection();
+        Random r = new Random();
+        AtomicLong id = new AtomicLong(0);
+        return clientCache().entrySet().stream().map(e -> {
+            TrashClient value = e.getValue();
+            Receiver receiver = receivers.get(r.nextInt(receivers.size() - 1));
+            Long clientId = value.getId();
+            value.setBalance(r.nextDouble()*3);
+            return new TrashOperation(id.incrementAndGet(), clientId, receiver.getId(), ZonedDateTime.now(), TrashStatus.IN_BOX, receiver.getLocation(), 0.4, "plastic");
+
+
+        }).collect(Collectors.toList());
+    };
 }

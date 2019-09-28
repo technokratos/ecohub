@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -29,12 +30,23 @@ public class MemoryGeoServiceImpl implements GeoService {
     @Autowired
     @Qualifier("initReceiverCollection")
     private List<Receiver> receivers;
+    @Autowired
+    private List<TrashOperation> initOperations;
 
     @Autowired
     @Qualifier("clientCache")
     private Map<Long, TrashClient> clientCache;
 
     private Map<Long, List<TrashOperation>> clientOperationMap = new HashMap<>();
+
+    @PostConstruct
+    private void init(){
+        initOperations.forEach(trashOperation -> {
+            List<TrashOperation> trashOperations = clientOperationMap.computeIfAbsent(trashOperation.getClientId(), id ->  new ArrayList<>());
+            trashOperations.add(trashOperation);
+        });
+
+    }
 
     @Override
     public List<Receiver> getReceivers(Area area) {
