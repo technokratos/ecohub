@@ -128,7 +128,7 @@ public class RouteController {
             titles = IntStream.range('A', 'Z')
                     .limit(route.getPoints().size())
                     .mapToObj(value -> (char) value)
-                    .map(character -> challenger.toString())
+                    .map(Object::toString)
                     .collect(Collectors.toList());
 
         } else {
