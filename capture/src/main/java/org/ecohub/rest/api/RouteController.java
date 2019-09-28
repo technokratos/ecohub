@@ -3,6 +3,7 @@ package org.ecohub.rest.api;
 import org.apache.commons.lang3.tuple.Pair;
 import org.ecohub.rest.api.data.Area;
 import org.ecohub.rest.api.data.Route;
+import org.ecohub.rest.api.data.Routes;
 import org.ecohub.rest.model.Location;
 import org.ecohub.rest.model.Receiver;
 import org.ecohub.rest.route.RouteService;
@@ -17,9 +18,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -39,7 +40,7 @@ public class RouteController {
     private RouteService routeService;
 
     @RequestMapping(value = "/insertInRoute", method = RequestMethod.POST    )
-    public Route findRoute(@RequestBody Route route) {
+    public Routes findRoute(@RequestBody Route route) {
         if (route == null || route.getPoints().size() == 1) {
             logger.warn("Empty params in query");
             throw new IllegalStateException("Empty params in query");
@@ -66,17 +67,16 @@ public class RouteController {
         }
         if (receivers.isEmpty()) {
             logger.info("Not found recevier for route" + route);
-            return route;
+            return new Routes(Collections.singletonList(route));
         }
 
         List<Pair<Route, Double>> routeWithDelta = findRoutesWithDelta(route, receivers);
 
-        Optional<Pair<Route, Double>> min = routeWithDelta.stream().min((o1, o2) -> (int) (o1.getRight() - o2.getRight()));
-        if (min.isPresent()) {
-            return insertPolylines(min.get().getLeft());
-        } else {
-            throw new IllegalStateException("Impossible");
-        }
+        List<Route> routes = routeWithDelta.stream().sorted((o1, o2) -> (int) (o1.getRight() - o2.getRight()))
+                .map(Pair::getLeft)
+                .peek(this::insertPolylines)
+                .limit(3).collect(Collectors.toList());
+        return new Routes(routes);
 
     }
 
