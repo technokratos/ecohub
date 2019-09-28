@@ -22,8 +22,8 @@ import java.util.Optional;
  * @author Denis B. Kulikov<br/>
  * date: 24.08.2019:20:29<br/>
  */
-//@Service
-//@Conditional(ClusterCondition.class)
+@Service
+@Conditional(ClusterCondition.class)
 public class RedisGeoServiceImpl implements GeoService
 {
     private static Logger logger = LoggerFactory.getLogger(RedisGeoServiceImpl.class);

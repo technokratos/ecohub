@@ -2,7 +2,7 @@ server:
   port: 9762
 spring:
   application:
-    name: capture-game
+    ecohub
 eureka:
   client:
     serviceUrl:

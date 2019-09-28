@@ -124,7 +124,7 @@ public class RouteController {
         }
         ArrayList<Location> locations = new ArrayList<>(route.getPoints());
         final List<String> titles;
-        if (route.getTitles().size() < route.getPoints().size() ) {
+        if (route.getTitles() ==  null || route.getTitles().size() < route.getPoints().size() ) {
             titles = IntStream.range('A', 'Z')
                     .limit(route.getPoints().size())
                     .mapToObj(value -> (char) value)
