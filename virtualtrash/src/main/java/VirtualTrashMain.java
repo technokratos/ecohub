@@ -21,7 +21,7 @@ public class VirtualTrashMain extends Application {
 
     private RestTemplate restTemplate = new RestTemplate();
 
-    public static final String HOST = "localhost";///"84.201.165.19";
+    public static final String HOST = "84.201.165.19";
     public static final String STATUS_URL = "http://" + HOST + ":8000/statusOperation?receiverId=2";
     public static final String CONFIRM_URL = "http://" + HOST + ":8000/confirmByReceiver?boxId=1&type=%22plastic%22&weight=0.04";
     public static final String UN_CONFIRM_URL = "http://" + HOST + ":8000/unConfirmByReceiver?boxId=1";
@@ -34,6 +34,7 @@ public class VirtualTrashMain extends Application {
     private volatile ScheduledFuture<?> request;
     private Scene scene;
     private volatile boolean isOpen;
+    private volatile ScheduledFuture<?> uncofirm;
 
 
     public static void main(String[] args) {
@@ -75,6 +76,11 @@ public class VirtualTrashMain extends Application {
         scene.setOnKeyPressed(e -> {
             if (e.getCode().equals(KeyCode.SPACE)) {
                 confirm();
+                if (uncofirm != null) {
+                    uncofirm.cancel(true);
+                }
+                setClose();
+                scheduleRequest();
             }
         });
         Platform.runLater(() -> {
@@ -83,7 +89,7 @@ public class VirtualTrashMain extends Application {
         });
 
         System.out.println("Schedule delay");
-        closeService.schedule(() -> {
+        uncofirm = closeService.schedule(() -> {
             unconfirm();
             setClose();
             scheduleRequest();

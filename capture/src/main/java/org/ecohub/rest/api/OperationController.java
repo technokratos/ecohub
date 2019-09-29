@@ -109,7 +109,7 @@ public class OperationController {
 
 
     @RequestMapping(value = "/confirmByReceiver", method = RequestMethod.POST)
-    public TrashStatusResponse confirm(TrashOperationСonfirm confirmer) {
+    public TrashOperation confirm(TrashOperationСonfirm confirmer) {
         logger.info(confirmer.toString());
         Optional<Receiver> receiverById = geoService.getReceiverByBoxId(confirmer.getBoxId());
         if (receiverById.isPresent()) {
@@ -121,10 +121,10 @@ public class OperationController {
                 trashOperation.setWeight(confirmer.getWeight());
                 trashOperation.setType(confirmer.getType());
                 geoService.addOperation(trashOperation.getClientId(), trashOperation);
-                return new TrashStatusResponse(TrashStatus.IN_BOX);
+                return trashOperation;
             } else {
                 logger.info("Not found trash operation {}", confirmer);
-                return new TrashStatusResponse(TrashStatus.UNKNOWN);
+                throw new IllegalStateException("Not found operation " + confirmer);
             }
         } else {
             logger.info("Not found receiver}", confirmer);
