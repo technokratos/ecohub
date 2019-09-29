@@ -87,9 +87,9 @@ public class OperationController {
                 trashOperation.setType(confirmer.getType());
                 trashOperation.setStatus(TrashStatus.IN_BOX);
                 geoService.addOperation(trashOperation.getClientId(), trashOperation);
-                return new TrashStatusResponse(trashOperation.getStatus());
+                return new TrashStatusResponse(TrashStatus.IN_BOX);
             } else {
-                throw new IllegalStateException("Not found actual operation");
+                return new TrashStatusResponse(TrashStatus.UNKNOWN);
             }
         } else {
             throw new IllegalStateException("Not found Receiver");

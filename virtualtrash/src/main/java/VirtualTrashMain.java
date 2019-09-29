@@ -26,7 +26,7 @@ public class VirtualTrashMain extends Application {
     public static final String CONFIRM_URL = "http://" + HOST + ":8000/confirmByReceiver?boxId=1&type=%22plastic%22&weight=0.04";
 
     private final ScheduledExecutorService closeService = Executors.newScheduledThreadPool(1);
-    private final ScheduledExecutorService requestService = Executors.newScheduledThreadPool(1);
+    private ScheduledExecutorService requestService = Executors.newScheduledThreadPool(1);
     private ImageView firstImage;
     private ImageView secondImage;
     private StackPane containerPane;
@@ -35,6 +35,7 @@ public class VirtualTrashMain extends Application {
     public static void main(String[] args) {
         Application.launch(args);
     }
+
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Load Image");
@@ -47,8 +48,8 @@ public class VirtualTrashMain extends Application {
         Scene scene = new Scene(containerPane);
         //primaryStage.setFullScreen(true);
         scene.setOnKeyPressed(e -> {
-            if(e.getCode().equals(KeyCode.SPACE)){
-                setOpen();
+            if (e.getCode().equals(KeyCode.SPACE)) {
+                confirm();
             }
         });
         scheduleRequest();
@@ -57,32 +58,33 @@ public class VirtualTrashMain extends Application {
     }
 
     private void scheduleRequest() {
+        requestService = Executors.newScheduledThreadPool(1);
         request = requestService.scheduleAtFixedRate(() -> {
             String status = getStatus();
             System.out.println("CURRENT STATUS " + status);
             if (status.contains("IN_BOX")) {
-                      setOpen();
-                request.cancel(false);
+                setOpen();
+                requestService.shutdownNow();
             }
         }, 1, 500, TimeUnit.MILLISECONDS);
     }
 
     private void setOpen() {
-        System.out.println("Open");
-        containerPane.getChildren().setAll(secondImage);
+
+        Platform.runLater(() -> {
+            System.out.println("Open");
+            containerPane.getChildren().setAll(secondImage);
+        });
+
         System.out.println("Schedule delay");
-        closeService.schedule(() -> {
-            confirm();
-            Platform.runLater(() -> {
-                System.out.println("Run scheduled closed");
-                setClose();
-            });
-        }, 5, TimeUnit.SECONDS);
+        closeService.schedule(this::setClose, 5, TimeUnit.SECONDS);
     }
 
     private void setClose() {
-        System.out.println("Close");
-        containerPane.getChildren().setAll(firstImage);
+        Platform.runLater(() -> {
+            System.out.println("Close");
+            containerPane.getChildren().setAll(firstImage);
+        });
         scheduleRequest();
 
 
@@ -105,6 +107,7 @@ public class VirtualTrashMain extends Application {
         }
         return "";
     }
+
     private String confirm() {
         try {
             System.out.println("CONFIRM");
