@@ -10,10 +10,14 @@ import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.stream.Stream;
 
 
 public class VirtualTrashMain extends Application {
@@ -35,6 +39,7 @@ public class VirtualTrashMain extends Application {
     private Scene scene;
     private volatile boolean isOpen;
     private volatile ScheduledFuture<?> uncofirm;
+    private Random r = new Random();
 
 
     public static void main(String[] args) {
@@ -134,9 +139,19 @@ public class VirtualTrashMain extends Application {
             HttpHeaders headers = new HttpHeaders();
             headers.setAccept(Arrays.asList(new MediaType[]{MediaType.APPLICATION_JSON}));
             // Request to return JSON format
-            headers.setContentType(MediaType.APPLICATION_JSON);
+           // headers.setContentType(MediaType.APPLICATION_JSON);
+
+            String[] objects = new String[]{"organic",
+                    "battery",
+                    "plastic",
+                    "glass",
+                    "light",
+                    "metal",
+                    "paper"};
+            AtomicLong idGen = new AtomicLong(0);
+
             headers.set("boxId", "1");
-            headers.set("type", "glass");
+            headers.set("type", objects[r.nextInt(objects.length)]);
             headers.set("weight", "0.2");
 
             // HttpEntity<String>: To get result as String.
