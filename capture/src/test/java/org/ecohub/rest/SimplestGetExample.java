@@ -1,9 +1,8 @@
 package org.ecohub.rest;
- 
+
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.io.IOUtils;
-import org.apache.http.impl.client.RoutedRequest;
 import org.ecohub.rest.route.api.RouteResponse;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;

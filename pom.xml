@@ -28,6 +28,7 @@
         <module>proxy</module>
         <module>eureka</module>
         <module>capture</module>
+        <module>virtualtrash</module>
     </modules>
     <repositories>
         <repository>

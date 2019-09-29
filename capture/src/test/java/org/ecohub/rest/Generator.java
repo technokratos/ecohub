@@ -25,6 +25,13 @@ import java.util.stream.Stream;
  */
 public class Generator {
 
+    /**
+     * Location
+     *   "longitude": 49.299688,
+     *         "latitude": 55.612113
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         Location base = new Location(55.794742, 49.106220);
         Random r = new Random();

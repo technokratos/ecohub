@@ -1,1 +1,2459 @@
-{"receivers":[{"id":2,"type":"BOX","location":{"longitude":48.77791563470481,"latitude":55.96828384526444},"boxes":[{"id":1,"load":0.3175230021204396,"type":"glass"}],"canConfirm":true},{"id":6,"type":"BOX","location":{"longitude":48.89866533485593,"latitude":56.09752505951639},"boxes":[{"id":3,"load":0.9741135635210949,"type":"plastic"},{"id":4,"load":0.9350109874135506,"type":"light"},{"id":5,"load":0.028972397196836308,"type":"paper"}],"canConfirm":true},{"id":11,"type":"BOX","location":{"longitude":49.59598711757942,"latitude":56.048237062962585},"boxes":[{"id":7,"load":0.2956751998107392,"type":"organic"},{"id":8,"load":0.8268489651969559,"type":"plastic"},{"id":9,"load":0.747005035023677,"type":"glass"},{"id":10,"load":0.6338398025994372,"type":"metal"}],"canConfirm":true},{"id":15,"type":"BOX","location":{"longitude":48.907394075753196,"latitude":55.31275236749109},"boxes":[{"id":12,"load":0.2328018797411484,"type":"organic"},{"id":13,"load":0.8760419235324028,"type":"glass"},{"id":14,"load":0.4179868681641894,"type":"paper"}],"canConfirm":true},{"id":20,"type":"BOX","location":{"longitude":49.1120209988791,"latitude":56.15768620911397},"boxes":[{"id":16,"load":0.8784044813113623,"type":"organic"},{"id":17,"load":0.11922775429959354,"type":"plastic"},{"id":18,"load":0.7070612280436701,"type":"glass"},{"id":19,"load":0.06457355200983006,"type":"light"}],"canConfirm":true},{"id":23,"type":"BOX","location":{"longitude":49.124136422092484,"latitude":56.21221605243011},"boxes":[{"id":21,"load":0.3634837285328705,"type":"battery"},{"id":22,"load":0.6692103607601234,"type":"plastic"}],"canConfirm":true},{"id":27,"type":"BOX","location":{"longitude":48.696468314721535,"latitude":55.95107394705441},"boxes":[{"id":24,"load":0.9281689073232842,"type":"organic"},{"id":25,"load":0.6095065400373886,"type":"battery"},{"id":26,"load":0.6808519806729445,"type":"glass"}],"canConfirm":true},{"id":30,"type":"BOX","location":{"longitude":48.77078949154087,"latitude":55.760177591450685},"boxes":[{"id":28,"load":0.739012411579343,"type":"organic"},{"id":29,"load":0.3761104668848517,"type":"battery"}],"canConfirm":true},{"id":33,"type":"BOX","location":{"longitude":48.77097522282449,"latitude":55.728222258260374},"boxes":[{"id":31,"load":0.47498441124644797,"type":"battery"},{"id":32,"load":0.3709765534798548,"type":"glass"}],"canConfirm":true},{"id":37,"type":"BOX","location":{"longitude":49.08984724875458,"latitude":56.07474964911851},"boxes":[{"id":34,"load":0.860157778096933,"type":"organic"},{"id":35,"load":0.6628261516902333,"type":"glass"},{"id":36,"load":0.2409311500778729,"type":"light"}],"canConfirm":true},{"id":40,"type":"BOX","location":{"longitude":49.16269485125784,"latitude":55.71833178053504},"boxes":[{"id":38,"load":0.47635464171635666,"type":"organic"},{"id":39,"load":0.6827459937364176,"type":"battery"}],"canConfirm":true},{"id":44,"type":"BOX","location":{"longitude":49.29401033838761,"latitude":56.25478286721039},"boxes":[{"id":41,"load":0.05112646401095999,"type":"battery"},{"id":42,"load":0.7219371109443922,"type":"plastic"},{"id":43,"load":0.034801200575662494,"type":"paper"}],"canConfirm":true},{"id":48,"type":"BOX","location":{"longitude":49.41689543072147,"latitude":55.80149461082172},"boxes":[{"id":45,"load":0.14803227569916644,"type":"plastic"},{"id":46,"load":0.9028311290393952,"type":"metal"},{"id":47,"load":0.6831027481284319,"type":"paper"}],"canConfirm":true},{"id":52,"type":"BOX","location":{"longitude":49.32601271857689,"latitude":56.18999146551403},"boxes":[{"id":49,"load":0.5868708531983977,"type":"glass"},{"id":50,"load":0.4186181923996307,"type":"metal"},{"id":51,"load":0.7614097001321997,"type":"paper"}],"canConfirm":true},{"id":55,"type":"BOX","location":{"longitude":48.98300964485522,"latitude":56.27222640009195},"boxes":[{"id":53,"load":0.8388135975544485,"type":"plastic"},{"id":54,"load":0.4352486395771179,"type":"metal"}],"canConfirm":true},{"id":60,"type":"BOX","location":{"longitude":48.779694222947306,"latitude":55.34276220919772},"boxes":[{"id":56,"load":0.6085839981582648,"type":"organic"},{"id":57,"load":0.3607145921514987,"type":"plastic"},{"id":58,"load":0.1525289210512798,"type":"glass"},{"id":59,"load":0.561207720495813,"type":"paper"}],"canConfirm":true},{"id":63,"type":"BOX","location":{"longitude":48.6364188242973,"latitude":55.55846023370033},"boxes":[{"id":61,"load":0.771811862502851,"type":"battery"},{"id":62,"load":0.2631338032094299,"type":"plastic"}],"canConfirm":true},{"id":67,"type":"BOX","location":{"longitude":48.872830849020396,"latitude":56.17627434433087},"boxes":[{"id":64,"load":0.2783242803815965,"type":"organic"},{"id":65,"load":0.5354649676438342,"type":"plastic"},{"id":66,"load":0.07377405856057306,"type":"metal"}],"canConfirm":true},{"id":71,"type":"BOX","location":{"longitude":49.15330880025219,"latitude":55.31519227148917},"boxes":[{"id":68,"load":0.3169452863971054,"type":"battery"},{"id":69,"load":0.917629157210648,"type":"plastic"},{"id":70,"load":0.6236973870479003,"type":"paper"}],"canConfirm":true},{"id":74,"type":"BOX","location":{"longitude":49.07775218316575,"latitude":55.42815238901473},"boxes":[{"id":72,"load":0.4335694578931044,"type":"organic"},{"id":73,"load":0.06897535024654489,"type":"plastic"}],"canConfirm":true},{"id":80,"type":"BOX","location":{"longitude":49.10830996056134,"latitude":56.24491695878282},"boxes":[{"id":75,"load":0.8742741081907701,"type":"plastic"},{"id":76,"load":0.15713320441402345,"type":"glass"},{"id":77,"load":0.4878181341892087,"type":"light"},{"id":78,"load":0.08539762176725862,"type":"metal"},{"id":79,"load":0.6998673792467095,"type":"paper"}],"canConfirm":true},{"id":84,"type":"BOX","location":{"longitude":49.00661621783007,"latitude":55.74987157571984},"boxes":[{"id":81,"load":0.15579962587969565,"type":"glass"},{"id":82,"load":0.9471115039548266,"type":"light"},{"id":83,"load":0.5500228403769348,"type":"metal"}],"canConfirm":true},{"id":89,"type":"BOX","location":{"longitude":48.9672472169877,"latitude":55.312644004661095},"boxes":[{"id":85,"load":0.13037100002544544,"type":"organic"},{"id":86,"load":0.926230642666234,"type":"plastic"},{"id":87,"load":0.6410221928143464,"type":"light"},{"id":88,"load":0.9320194009824329,"type":"metal"}],"canConfirm":true},{"id":92,"type":"BOX","location":{"longitude":49.01157360508484,"latitude":55.8479335183165},"boxes":[{"id":90,"load":0.8889607802143388,"type":"glass"},{"id":91,"load":0.10907624324617882,"type":"metal"}],"canConfirm":true},{"id":96,"type":"BOX","location":{"longitude":48.98681515436811,"latitude":56.1223330020427},"boxes":[{"id":93,"load":0.009506057976831572,"type":"organic"},{"id":94,"load":0.4302056636008761,"type":"plastic"},{"id":95,"load":0.00911506851365862,"type":"glass"}],"canConfirm":true},{"id":101,"type":"BOX","location":{"longitude":49.166261604059635,"latitude":56.11942553917609},"boxes":[{"id":97,"load":0.1813410244227266,"type":"organic"},{"id":98,"load":0.984641009546668,"type":"glass"},{"id":99,"load":0.94457942778602,"type":"metal"},{"id":100,"load":0.5172862558515007,"type":"paper"}],"canConfirm":true},{"id":106,"type":"BOX","location":{"longitude":48.8274806085728,"latitude":55.80016908693553},"boxes":[{"id":102,"load":0.25084709981740694,"type":"organic"},{"id":103,"load":0.5473603353173402,"type":"plastic"},{"id":104,"load":0.5370267423889865,"type":"glass"},{"id":105,"load":0.10226316406270353,"type":"metal"}],"canConfirm":true},{"id":111,"type":"BOX","location":{"longitude":49.13034402280208,"latitude":55.96628259893797},"boxes":[{"id":107,"load":0.7221185283807574,"type":"organic"},{"id":108,"load":0.4299131336616664,"type":"plastic"},{"id":109,"load":0.3274904922677122,"type":"glass"},{"id":110,"load":0.9839179333424547,"type":"light"}],"canConfirm":true},{"id":113,"type":"BOX","location":{"longitude":48.74100725683328,"latitude":55.51999626792906},"boxes":[{"id":112,"load":0.11314318527374212,"type":"plastic"}],"canConfirm":true},{"id":116,"type":"BOX","location":{"longitude":49.55128974920707,"latitude":55.36321514470278},"boxes":[{"id":114,"load":0.42645641359677444,"type":"organic"},{"id":115,"load":0.3716782218257393,"type":"plastic"}],"canConfirm":true},{"id":121,"type":"BOX","location":{"longitude":49.41469262693221,"latitude":55.95885534795018},"boxes":[{"id":117,"load":0.17752414020603158,"type":"organic"},{"id":118,"load":0.37673281745513776,"type":"glass"},{"id":119,"load":0.48955163463756846,"type":"metal"},{"id":120,"load":0.8642316836930526,"type":"paper"}],"canConfirm":true},{"id":126,"type":"BOX","location":{"longitude":48.90239157742333,"latitude":55.47528239168978},"boxes":[{"id":122,"load":0.576145421428424,"type":"organic"},{"id":123,"load":0.8864171154937942,"type":"plastic"},{"id":124,"load":0.1597764857066295,"type":"glass"},{"id":125,"load":0.43442783520261563,"type":"light"}],"canConfirm":true},{"id":131,"type":"BOX","location":{"longitude":49.08150179609921,"latitude":55.941951033467696},"boxes":[{"id":127,"load":0.8320013380688703,"type":"organic"},{"id":128,"load":0.5110629243972958,"type":"battery"},{"id":129,"load":0.3309685426740314,"type":"glass"},{"id":130,"load":0.47695547173035113,"type":"light"}],"canConfirm":true},{"id":133,"type":"BOX","location":{"longitude":49.597975593008215,"latitude":55.50009650257557},"boxes":[{"id":132,"load":0.4588018399654453,"type":"organic"}],"canConfirm":true},{"id":135,"type":"BOX","location":{"longitude":49.35520843813407,"latitude":55.846163306311155},"boxes":[{"id":134,"load":0.7853604447457869,"type":"battery"}],"canConfirm":true},{"id":138,"type":"BOX","location":{"longitude":49.55783958887572,"latitude":55.56957960432977},"boxes":[{"id":136,"load":0.2926857789362288,"type":"battery"},{"id":137,"load":0.051229958596608505,"type":"glass"}],"canConfirm":true},{"id":142,"type":"BOX","location":{"longitude":48.73925158656346,"latitude":55.934520022730055},"boxes":[{"id":139,"load":0.6346090275285959,"type":"organic"},{"id":140,"load":0.44947211421706357,"type":"plastic"},{"id":141,"load":0.3238374058172291,"type":"glass"}],"canConfirm":true},{"id":144,"type":"BOX","location":{"longitude":48.980643747299986,"latitude":55.91474602425152},"boxes":[{"id":143,"load":0.8181621724243662,"type":"light"}],"canConfirm":true},{"id":147,"type":"BOX","location":{"longitude":49.054182925856516,"latitude":56.16074809935639},"boxes":[{"id":145,"load":0.3826425480533635,"type":"organic"},{"id":146,"load":0.6698598898469171,"type":"plastic"}],"canConfirm":true},{"id":150,"type":"BOX","location":{"longitude":49.493140454474485,"latitude":55.9793538445207},"boxes":[{"id":148,"load":0.41436516930791134,"type":"battery"},{"id":149,"load":0.8831933983794886,"type":"plastic"}],"canConfirm":true},{"id":154,"type":"BOX","location":{"longitude":49.00153529959707,"latitude":56.082525176728566},"boxes":[{"id":151,"load":0.5074133845218659,"type":"light"},{"id":152,"load":0.5912161054380716,"type":"metal"},{"id":153,"load":0.7867852300935946,"type":"paper"}],"canConfirm":true},{"id":160,"type":"BOX","location":{"longitude":49.48708309836103,"latitude":55.92301737003743},"boxes":[{"id":155,"load":0.3142523217450185,"type":"organic"},{"id":156,"load":0.0012819114724229586,"type":"battery"},{"id":157,"load":0.942693640329833,"type":"glass"},{"id":158,"load":0.10806157841726682,"type":"light"},{"id":159,"load":0.46708620503752063,"type":"paper"}],"canConfirm":true},{"id":165,"type":"BOX","location":{"longitude":48.70821415224897,"latitude":55.58686950525302},"boxes":[{"id":161,"load":0.24456215474003817,"type":"battery"},{"id":162,"load":0.6524650041212924,"type":"plastic"},{"id":163,"load":0.43103945635638097,"type":"light"},{"id":164,"load":0.4066557223408124,"type":"metal"}],"canConfirm":true},{"id":167,"type":"BOX","location":{"longitude":49.19774849879169,"latitude":56.04247292819369},"boxes":[{"id":166,"load":0.43068299350582806,"type":"organic"}],"canConfirm":true},{"id":171,"type":"BOX","location":{"longitude":49.396283717371126,"latitude":56.26980686538927},"boxes":[{"id":168,"load":0.4013649069838433,"type":"glass"},{"id":169,"load":0.23176873175160095,"type":"light"},{"id":170,"load":0.1281830343191297,"type":"metal"}],"canConfirm":true},{"id":174,"type":"BOX","location":{"longitude":49.448479796187954,"latitude":55.515626322185796},"boxes":[{"id":172,"load":0.06570980759557654,"type":"plastic"},{"id":173,"load":0.0976384730042944,"type":"glass"}],"canConfirm":true},{"id":179,"type":"BOX","location":{"longitude":49.579960115707884,"latitude":55.57977997135924},"boxes":[{"id":175,"load":0.3301998155688749,"type":"plastic"},{"id":176,"load":0.34011316395392766,"type":"light"},{"id":177,"load":0.5786538685199047,"type":"metal"},{"id":178,"load":0.4842660220755214,"type":"paper"}],"canConfirm":true},{"id":183,"type":"BOX","location":{"longitude":48.76538086428887,"latitude":55.76611813705077},"boxes":[{"id":180,"load":0.8841701513382584,"type":"organic"},{"id":181,"load":0.3114582554753116,"type":"plastic"},{"id":182,"load":0.9613973929911332,"type":"light"}],"canConfirm":true},{"id":187,"type":"BOX","location":{"longitude":48.764233054698536,"latitude":56.21678566370331},"boxes":[{"id":184,"load":0.2568145382148065,"type":"plastic"},{"id":185,"load":0.5894486565934903,"type":"light"},{"id":186,"load":0.3273508835610891,"type":"metal"}],"canConfirm":true},{"id":191,"type":"BOX","location":{"longitude":48.63523026284364,"latitude":55.65840032507298},"boxes":[{"id":188,"load":0.49772363589342283,"type":"battery"},{"id":189,"load":0.17312002571280782,"type":"glass"},{"id":190,"load":0.15803398669734536,"type":"metal"}],"canConfirm":true},{"id":195,"type":"BOX","location":{"longitude":49.42830675729748,"latitude":55.95743750281901},"boxes":[{"id":192,"load":0.6292973941237439,"type":"battery"},{"id":193,"load":0.06001165836230293,"type":"plastic"},{"id":194,"load":0.8663763130052722,"type":"light"}],"canConfirm":true},{"id":200,"type":"BOX","location":{"longitude":49.28388902390136,"latitude":55.81921606159465},"boxes":[{"id":196,"load":0.9536173169351622,"type":"battery"},{"id":197,"load":0.06371550959664529,"type":"plastic"},{"id":198,"load":0.351715407778564,"type":"glass"},{"id":199,"load":0.03538515796019337,"type":"metal"}],"canConfirm":true},{"id":204,"type":"BOX","location":{"longitude":49.45205442007191,"latitude":55.85744053762533},"boxes":[{"id":201,"load":0.2818188030162506,"type":"organic"},{"id":202,"load":0.1708090671541499,"type":"battery"},{"id":203,"load":0.23744785839797677,"type":"plastic"}],"canConfirm":true},{"id":207,"type":"BOX","location":{"longitude":49.49328083945418,"latitude":55.36979899531916},"boxes":[{"id":205,"load":0.29992707853763534,"type":"battery"},{"id":206,"load":0.7403443576824361,"type":"light"}],"canConfirm":true},{"id":209,"type":"BOX","location":{"longitude":49.01428942308729,"latitude":55.58001588151958},"boxes":[{"id":208,"load":0.7930364225971442,"type":"light"}],"canConfirm":true},{"id":213,"type":"BOX","location":{"longitude":48.89372575712398,"latitude":55.95147618184696},"boxes":[{"id":210,"load":0.9343504066589616,"type":"battery"},{"id":211,"load":0.627467773959442,"type":"plastic"},{"id":212,"load":0.6186254166494657,"type":"glass"}],"canConfirm":true},{"id":218,"type":"BOX","location":{"longitude":49.15325444108981,"latitude":55.41370929650565},"boxes":[{"id":214,"load":0.8885836886462388,"type":"organic"},{"id":215,"load":0.917062344370964,"type":"battery"},{"id":216,"load":0.9546036790799749,"type":"metal"},{"id":217,"load":0.9579687405096361,"type":"paper"}],"canConfirm":true},{"id":222,"type":"BOX","location":{"longitude":49.040899116045864,"latitude":55.45864000036165},"boxes":[{"id":219,"load":0.7363061493157722,"type":"organic"},{"id":220,"load":0.6113761539855141,"type":"battery"},{"id":221,"load":0.7664812244543608,"type":"glass"}],"canConfirm":true},{"id":225,"type":"BOX","location":{"longitude":49.27137982276103,"latitude":55.90438800075976},"boxes":[{"id":223,"load":0.367122730259141,"type":"plastic"},{"id":224,"load":0.5375305859465983,"type":"paper"}],"canConfirm":true},{"id":228,"type":"BOX","location":{"longitude":49.4022323534813,"latitude":55.4870995664429},"boxes":[{"id":226,"load":0.9723025298641812,"type":"battery"},{"id":227,"load":0.9051889319700351,"type":"glass"}],"canConfirm":true},{"id":230,"type":"BOX","location":{"longitude":49.039494503388234,"latitude":55.90141163053268},"boxes":[{"id":229,"load":0.9583732730014362,"type":"organic"}],"canConfirm":true},{"id":234,"type":"BOX","location":{"longitude":48.925104464049184,"latitude":56.11727011750184},"boxes":[{"id":231,"load":0.12923465464852113,"type":"organic"},{"id":232,"load":0.3400008565152899,"type":"battery"},{"id":233,"load":0.3518788583920962,"type":"glass"}],"canConfirm":true},{"id":238,"type":"BOX","location":{"longitude":49.13548948501955,"latitude":56.09364611523368},"boxes":[{"id":235,"load":0.8519310018377659,"type":"plastic"},{"id":236,"load":0.5056430112649621,"type":"glass"},{"id":237,"load":0.7771211841209406,"type":"metal"}],"canConfirm":true},{"id":240,"type":"BOX","location":{"longitude":49.127880161250175,"latitude":56.0688659927993},"boxes":[{"id":239,"load":0.4662931345400788,"type":"metal"}],"canConfirm":true},{"id":244,"type":"BOX","location":{"longitude":48.968517568338925,"latitude":55.32039569812155},"boxes":[{"id":241,"load":0.006947410903080153,"type":"battery"},{"id":242,"load":0.9717162924696573,"type":"plastic"},{"id":243,"load":0.6718064559646879,"type":"metal"}],"canConfirm":true},{"id":247,"type":"BOX","location":{"longitude":49.17926534415961,"latitude":56.216039686774046},"boxes":[{"id":245,"load":0.49392004474342643,"type":"organic"},{"id":246,"load":0.1521115218076522,"type":"metal"}],"canConfirm":true},{"id":250,"type":"BOX","location":{"longitude":49.35415065146563,"latitude":55.48351383576608},"boxes":[{"id":248,"load":0.8877669977067549,"type":"organic"},{"id":249,"load":0.964145989393673,"type":"light"}],"canConfirm":true},{"id":253,"type":"BOX","location":{"longitude":49.244135560130886,"latitude":56.267409676212296},"boxes":[{"id":251,"load":0.001205310689302741,"type":"organic"},{"id":252,"load":0.6633919941791352,"type":"battery"}],"canConfirm":true},{"id":255,"type":"BOX","location":{"longitude":49.553210978561374,"latitude":55.437032325593485},"boxes":[{"id":254,"load":0.7021584554352063,"type":"glass"}],"canConfirm":true},{"id":261,"type":"BOX","location":{"longitude":48.89034469613952,"latitude":56.07725314645877},"boxes":[{"id":256,"load":0.7618978657866964,"type":"organic"},{"id":257,"load":0.7474248947278721,"type":"glass"},{"id":258,"load":0.8638850709722609,"type":"light"},{"id":259,"load":0.5589249302886357,"type":"metal"},{"id":260,"load":0.5899204717944486,"type":"paper"}],"canConfirm":true},{"id":263,"type":"BOX","location":{"longitude":49.261807167011035,"latitude":56.214728058773204},"boxes":[{"id":262,"load":0.546431621771232,"type":"paper"}],"canConfirm":true},{"id":268,"type":"BOX","location":{"longitude":49.346913396240254,"latitude":56.08793129242509},"boxes":[{"id":264,"load":0.329296062061716,"type":"battery"},{"id":265,"load":0.3225147019260961,"type":"plastic"},{"id":266,"load":0.49069787409944754,"type":"glass"},{"id":267,"load":0.46550032279870346,"type":"metal"}],"canConfirm":true},{"id":271,"type":"BOX","location":{"longitude":48.82333693735566,"latitude":55.84062771537899},"boxes":[{"id":269,"load":0.29579931674897697,"type":"glass"},{"id":270,"load":0.35260493317128316,"type":"paper"}],"canConfirm":true},{"id":275,"type":"BOX","location":{"longitude":49.041049027043876,"latitude":56.08070451079387},"boxes":[{"id":272,"load":0.9634254742899145,"type":"organic"},{"id":273,"load":0.21013354587429445,"type":"battery"},{"id":274,"load":0.4626570480383284,"type":"glass"}],"canConfirm":true},{"id":281,"type":"BOX","location":{"longitude":49.059008352113246,"latitude":56.132227621242905},"boxes":[{"id":276,"load":0.3797199494218607,"type":"organic"},{"id":277,"load":0.9893689638676005,"type":"plastic"},{"id":278,"load":0.11409997057797272,"type":"glass"},{"id":279,"load":0.888292977298193,"type":"light"},{"id":280,"load":0.15332465092685454,"type":"metal"}],"canConfirm":true},{"id":283,"type":"BOX","location":{"longitude":49.43562893071388,"latitude":55.6890011794592},"boxes":[{"id":282,"load":0.762631221784796,"type":"organic"}],"canConfirm":true},{"id":289,"type":"BOX","location":{"longitude":49.35374550003143,"latitude":56.25644989640482},"boxes":[{"id":284,"load":0.8788792056962934,"type":"organic"},{"id":285,"load":0.030760409514721476,"type":"battery"},{"id":286,"load":0.5746147283442907,"type":"plastic"},{"id":287,"load":0.8543375767556202,"type":"light"},{"id":288,"load":0.7500931983606652,"type":"paper"}],"canConfirm":true},{"id":294,"type":"BOX","location":{"longitude":49.24368657620703,"latitude":55.93740726367832},"boxes":[{"id":290,"load":0.9473437226207753,"type":"battery"},{"id":291,"load":0.9413164210967553,"type":"light"},{"id":292,"load":0.9529283104849213,"type":"metal"},{"id":293,"load":0.12714942845660315,"type":"paper"}],"canConfirm":true},{"id":297,"type":"BOX","location":{"longitude":48.73707868114203,"latitude":55.71443557982742},"boxes":[{"id":295,"load":0.1377276298144292,"type":"battery"},{"id":296,"load":0.11965083353024164,"type":"light"}],"canConfirm":true},{"id":299,"type":"BOX","location":{"longitude":48.89380358274871,"latitude":56.24570303102168},"boxes":[{"id":298,"load":0.22537618966044604,"type":"light"}],"canConfirm":true},{"id":303,"type":"BOX","location":{"longitude":49.2760617164774,"latitude":55.805989985783256},"boxes":[{"id":300,"load":0.564298073428593,"type":"light"},{"id":301,"load":0.9531048896189693,"type":"metal"},{"id":302,"load":0.17748595433428127,"type":"paper"}],"canConfirm":true},{"id":305,"type":"BOX","location":{"longitude":48.6854505531563,"latitude":56.26032116359231},"boxes":[{"id":304,"load":0.7645497470506462,"type":"organic"}],"canConfirm":true},{"id":308,"type":"BOX","location":{"longitude":49.210264302570955,"latitude":56.193528180309215},"boxes":[{"id":306,"load":0.037271155674387435,"type":"organic"},{"id":307,"load":0.14327690068204002,"type":"plastic"}],"canConfirm":true},{"id":310,"type":"BOX","location":{"longitude":48.70385308597855,"latitude":55.65781801587817},"boxes":[{"id":309,"load":0.07186714109838133,"type":"organic"}],"canConfirm":true},{"id":312,"type":"BOX","location":{"longitude":49.41460749683238,"latitude":56.16999564689204},"boxes":[{"id":311,"load":0.8855479177581614,"type":"light"}],"canConfirm":true},{"id":316,"type":"BOX","location":{"longitude":48.84108398123656,"latitude":56.20787576582213},"boxes":[{"id":313,"load":0.016948752587887528,"type":"organic"},{"id":314,"load":0.1788754323897801,"type":"battery"},{"id":315,"load":0.4381474170941868,"type":"glass"}],"canConfirm":true},{"id":320,"type":"BOX","location":{"longitude":48.92720035881244,"latitude":55.84163988396026},"boxes":[{"id":317,"load":0.8256312865663241,"type":"organic"},{"id":318,"load":0.47631471818110493,"type":"light"},{"id":319,"load":0.19160354722138528,"type":"paper"}],"canConfirm":true},{"id":325,"type":"BOX","location":{"longitude":49.27154242850625,"latitude":55.77393987366663},"boxes":[{"id":321,"load":0.31757559910360234,"type":"battery"},{"id":322,"load":0.5975967705331513,"type":"glass"},{"id":323,"load":0.3725631787967012,"type":"light"},{"id":324,"load":0.5183214654611659,"type":"metal"}],"canConfirm":true},{"id":329,"type":"BOX","location":{"longitude":48.790859346737236,"latitude":55.742671890090044},"boxes":[{"id":326,"load":0.7831277540205744,"type":"battery"},{"id":327,"load":0.6351484170451307,"type":"plastic"},{"id":328,"load":0.1471862890120138,"type":"metal"}],"canConfirm":true},{"id":332,"type":"BOX","location":{"longitude":49.49755191431278,"latitude":55.558412141133715},"boxes":[{"id":330,"load":0.2449475732150599,"type":"glass"},{"id":331,"load":0.9823225516588374,"type":"metal"}],"canConfirm":true},{"id":338,"type":"BOX","location":{"longitude":49.31452001843904,"latitude":56.16435051156202},"boxes":[{"id":333,"load":0.6019852104729624,"type":"battery"},{"id":334,"load":0.15241399012141665,"type":"plastic"},{"id":335,"load":0.7442374398594105,"type":"glass"},{"id":336,"load":0.6565114604885047,"type":"metal"},{"id":337,"load":0.08464641597546707,"type":"paper"}],"canConfirm":true},{"id":343,"type":"BOX","location":{"longitude":49.46906155452238,"latitude":55.73207361475719},"boxes":[{"id":339,"load":0.4769437951479433,"type":"battery"},{"id":340,"load":0.3244250744570183,"type":"glass"},{"id":341,"load":0.18722498246678188,"type":"metal"},{"id":342,"load":0.27655408916362667,"type":"paper"}],"canConfirm":true},{"id":347,"type":"BOX","location":{"longitude":49.037542772390275,"latitude":55.65984610830935},"boxes":[{"id":344,"load":0.3935441314910757,"type":"organic"},{"id":345,"load":0.44632160753630257,"type":"plastic"},{"id":346,"load":0.7151276588452972,"type":"light"}],"canConfirm":true},{"id":349,"type":"BOX","location":{"longitude":48.73857033527649,"latitude":55.962135418398304},"boxes":[{"id":348,"load":0.873980723180835,"type":"organic"}],"canConfirm":true},{"id":351,"type":"BOX","location":{"longitude":48.816126705678094,"latitude":55.97381972430596},"boxes":[{"id":350,"load":0.9147028937827618,"type":"organic"}],"canConfirm":true},{"id":353,"type":"BOX","location":{"longitude":48.66978278255634,"latitude":56.090577666760666},"boxes":[{"id":352,"load":0.7281205792866262,"type":"battery"}],"canConfirm":true},{"id":358,"type":"BOX","location":{"longitude":49.40470005099518,"latitude":55.692039103735},"boxes":[{"id":354,"load":0.4635068887236057,"type":"battery"},{"id":355,"load":0.47479011146916117,"type":"plastic"},{"id":356,"load":0.5357634002343477,"type":"light"},{"id":357,"load":0.6645523438897257,"type":"metal"}],"canConfirm":true},{"id":363,"type":"BOX","location":{"longitude":48.8090184598744,"latitude":55.81465090283701},"boxes":[{"id":359,"load":0.15644883300652512,"type":"battery"},{"id":360,"load":0.469390343617462,"type":"plastic"},{"id":361,"load":0.45114388450044296,"type":"glass"},{"id":362,"load":0.031218001437276932,"type":"paper"}],"canConfirm":true},{"id":366,"type":"BOX","location":{"longitude":49.1857376261113,"latitude":55.89190110097103},"boxes":[{"id":364,"load":0.6908859026073072,"type":"organic"},{"id":365,"load":0.9815036282046645,"type":"glass"}],"canConfirm":true},{"id":371,"type":"BOX","location":{"longitude":49.11816930898363,"latitude":55.84536022511426},"boxes":[{"id":367,"load":0.5986462306630184,"type":"glass"},{"id":368,"load":0.6413728892584544,"type":"light"},{"id":369,"load":0.20303580009014444,"type":"metal"},{"id":370,"load":0.9115977980156521,"type":"paper"}],"canConfirm":true}]}
+{
+  "receivers": [
+    {
+      "id": 2,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.299688,
+        "latitude": 55.612113
+      },
+      "boxes": [
+        {
+          "id": 1,
+          "load": 0.3175230021204396,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 6,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.89866533485593,
+        "latitude": 56.09752505951639
+      },
+      "boxes": [
+        {
+          "id": 3,
+          "load": 0.9741135635210949,
+          "type": "plastic"
+        },
+        {
+          "id": 4,
+          "load": 0.9350109874135506,
+          "type": "light"
+        },
+        {
+          "id": 5,
+          "load": 0.028972397196836308,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 11,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.59598711757942,
+        "latitude": 56.048237062962585
+      },
+      "boxes": [
+        {
+          "id": 7,
+          "load": 0.2956751998107392,
+          "type": "organic"
+        },
+        {
+          "id": 8,
+          "load": 0.8268489651969559,
+          "type": "plastic"
+        },
+        {
+          "id": 9,
+          "load": 0.747005035023677,
+          "type": "glass"
+        },
+        {
+          "id": 10,
+          "load": 0.6338398025994372,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 15,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.907394075753196,
+        "latitude": 55.31275236749109
+      },
+      "boxes": [
+        {
+          "id": 12,
+          "load": 0.2328018797411484,
+          "type": "organic"
+        },
+        {
+          "id": 13,
+          "load": 0.8760419235324028,
+          "type": "glass"
+        },
+        {
+          "id": 14,
+          "load": 0.4179868681641894,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 20,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.1120209988791,
+        "latitude": 56.15768620911397
+      },
+      "boxes": [
+        {
+          "id": 16,
+          "load": 0.8784044813113623,
+          "type": "organic"
+        },
+        {
+          "id": 17,
+          "load": 0.11922775429959354,
+          "type": "plastic"
+        },
+        {
+          "id": 18,
+          "load": 0.7070612280436701,
+          "type": "glass"
+        },
+        {
+          "id": 19,
+          "load": 0.06457355200983006,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 23,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.124136422092484,
+        "latitude": 56.21221605243011
+      },
+      "boxes": [
+        {
+          "id": 21,
+          "load": 0.3634837285328705,
+          "type": "battery"
+        },
+        {
+          "id": 22,
+          "load": 0.6692103607601234,
+          "type": "plastic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 27,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.696468314721535,
+        "latitude": 55.95107394705441
+      },
+      "boxes": [
+        {
+          "id": 24,
+          "load": 0.9281689073232842,
+          "type": "organic"
+        },
+        {
+          "id": 25,
+          "load": 0.6095065400373886,
+          "type": "battery"
+        },
+        {
+          "id": 26,
+          "load": 0.6808519806729445,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 30,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.77078949154087,
+        "latitude": 55.760177591450685
+      },
+      "boxes": [
+        {
+          "id": 28,
+          "load": 0.739012411579343,
+          "type": "organic"
+        },
+        {
+          "id": 29,
+          "load": 0.3761104668848517,
+          "type": "battery"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 33,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.77097522282449,
+        "latitude": 55.728222258260374
+      },
+      "boxes": [
+        {
+          "id": 31,
+          "load": 0.47498441124644797,
+          "type": "battery"
+        },
+        {
+          "id": 32,
+          "load": 0.3709765534798548,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 37,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.08984724875458,
+        "latitude": 56.07474964911851
+      },
+      "boxes": [
+        {
+          "id": 34,
+          "load": 0.860157778096933,
+          "type": "organic"
+        },
+        {
+          "id": 35,
+          "load": 0.6628261516902333,
+          "type": "glass"
+        },
+        {
+          "id": 36,
+          "load": 0.2409311500778729,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 40,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.16269485125784,
+        "latitude": 55.71833178053504
+      },
+      "boxes": [
+        {
+          "id": 38,
+          "load": 0.47635464171635666,
+          "type": "organic"
+        },
+        {
+          "id": 39,
+          "load": 0.6827459937364176,
+          "type": "battery"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 44,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.29401033838761,
+        "latitude": 56.25478286721039
+      },
+      "boxes": [
+        {
+          "id": 41,
+          "load": 0.05112646401095999,
+          "type": "battery"
+        },
+        {
+          "id": 42,
+          "load": 0.7219371109443922,
+          "type": "plastic"
+        },
+        {
+          "id": 43,
+          "load": 0.034801200575662494,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 48,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.41689543072147,
+        "latitude": 55.80149461082172
+      },
+      "boxes": [
+        {
+          "id": 45,
+          "load": 0.14803227569916644,
+          "type": "plastic"
+        },
+        {
+          "id": 46,
+          "load": 0.9028311290393952,
+          "type": "metal"
+        },
+        {
+          "id": 47,
+          "load": 0.6831027481284319,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 52,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.32601271857689,
+        "latitude": 56.18999146551403
+      },
+      "boxes": [
+        {
+          "id": 49,
+          "load": 0.5868708531983977,
+          "type": "glass"
+        },
+        {
+          "id": 50,
+          "load": 0.4186181923996307,
+          "type": "metal"
+        },
+        {
+          "id": 51,
+          "load": 0.7614097001321997,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 55,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.98300964485522,
+        "latitude": 56.27222640009195
+      },
+      "boxes": [
+        {
+          "id": 53,
+          "load": 0.8388135975544485,
+          "type": "plastic"
+        },
+        {
+          "id": 54,
+          "load": 0.4352486395771179,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 60,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.779694222947306,
+        "latitude": 55.34276220919772
+      },
+      "boxes": [
+        {
+          "id": 56,
+          "load": 0.6085839981582648,
+          "type": "organic"
+        },
+        {
+          "id": 57,
+          "load": 0.3607145921514987,
+          "type": "plastic"
+        },
+        {
+          "id": 58,
+          "load": 0.1525289210512798,
+          "type": "glass"
+        },
+        {
+          "id": 59,
+          "load": 0.561207720495813,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 63,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.6364188242973,
+        "latitude": 55.55846023370033
+      },
+      "boxes": [
+        {
+          "id": 61,
+          "load": 0.771811862502851,
+          "type": "battery"
+        },
+        {
+          "id": 62,
+          "load": 0.2631338032094299,
+          "type": "plastic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 67,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.872830849020396,
+        "latitude": 56.17627434433087
+      },
+      "boxes": [
+        {
+          "id": 64,
+          "load": 0.2783242803815965,
+          "type": "organic"
+        },
+        {
+          "id": 65,
+          "load": 0.5354649676438342,
+          "type": "plastic"
+        },
+        {
+          "id": 66,
+          "load": 0.07377405856057306,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 71,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.15330880025219,
+        "latitude": 55.31519227148917
+      },
+      "boxes": [
+        {
+          "id": 68,
+          "load": 0.3169452863971054,
+          "type": "battery"
+        },
+        {
+          "id": 69,
+          "load": 0.917629157210648,
+          "type": "plastic"
+        },
+        {
+          "id": 70,
+          "load": 0.6236973870479003,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 74,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.07775218316575,
+        "latitude": 55.42815238901473
+      },
+      "boxes": [
+        {
+          "id": 72,
+          "load": 0.4335694578931044,
+          "type": "organic"
+        },
+        {
+          "id": 73,
+          "load": 0.06897535024654489,
+          "type": "plastic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 80,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.10830996056134,
+        "latitude": 56.24491695878282
+      },
+      "boxes": [
+        {
+          "id": 75,
+          "load": 0.8742741081907701,
+          "type": "plastic"
+        },
+        {
+          "id": 76,
+          "load": 0.15713320441402345,
+          "type": "glass"
+        },
+        {
+          "id": 77,
+          "load": 0.4878181341892087,
+          "type": "light"
+        },
+        {
+          "id": 78,
+          "load": 0.08539762176725862,
+          "type": "metal"
+        },
+        {
+          "id": 79,
+          "load": 0.6998673792467095,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 84,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.00661621783007,
+        "latitude": 55.74987157571984
+      },
+      "boxes": [
+        {
+          "id": 81,
+          "load": 0.15579962587969565,
+          "type": "glass"
+        },
+        {
+          "id": 82,
+          "load": 0.9471115039548266,
+          "type": "light"
+        },
+        {
+          "id": 83,
+          "load": 0.5500228403769348,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 89,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.9672472169877,
+        "latitude": 55.312644004661095
+      },
+      "boxes": [
+        {
+          "id": 85,
+          "load": 0.13037100002544544,
+          "type": "organic"
+        },
+        {
+          "id": 86,
+          "load": 0.926230642666234,
+          "type": "plastic"
+        },
+        {
+          "id": 87,
+          "load": 0.6410221928143464,
+          "type": "light"
+        },
+        {
+          "id": 88,
+          "load": 0.9320194009824329,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 92,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.01157360508484,
+        "latitude": 55.8479335183165
+      },
+      "boxes": [
+        {
+          "id": 90,
+          "load": 0.8889607802143388,
+          "type": "glass"
+        },
+        {
+          "id": 91,
+          "load": 0.10907624324617882,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 96,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.98681515436811,
+        "latitude": 56.1223330020427
+      },
+      "boxes": [
+        {
+          "id": 93,
+          "load": 0.009506057976831572,
+          "type": "organic"
+        },
+        {
+          "id": 94,
+          "load": 0.4302056636008761,
+          "type": "plastic"
+        },
+        {
+          "id": 95,
+          "load": 0.00911506851365862,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 101,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.166261604059635,
+        "latitude": 56.11942553917609
+      },
+      "boxes": [
+        {
+          "id": 97,
+          "load": 0.1813410244227266,
+          "type": "organic"
+        },
+        {
+          "id": 98,
+          "load": 0.984641009546668,
+          "type": "glass"
+        },
+        {
+          "id": 99,
+          "load": 0.94457942778602,
+          "type": "metal"
+        },
+        {
+          "id": 100,
+          "load": 0.5172862558515007,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 106,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.8274806085728,
+        "latitude": 55.80016908693553
+      },
+      "boxes": [
+        {
+          "id": 102,
+          "load": 0.25084709981740694,
+          "type": "organic"
+        },
+        {
+          "id": 103,
+          "load": 0.5473603353173402,
+          "type": "plastic"
+        },
+        {
+          "id": 104,
+          "load": 0.5370267423889865,
+          "type": "glass"
+        },
+        {
+          "id": 105,
+          "load": 0.10226316406270353,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 111,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.13034402280208,
+        "latitude": 55.96628259893797
+      },
+      "boxes": [
+        {
+          "id": 107,
+          "load": 0.7221185283807574,
+          "type": "organic"
+        },
+        {
+          "id": 108,
+          "load": 0.4299131336616664,
+          "type": "plastic"
+        },
+        {
+          "id": 109,
+          "load": 0.3274904922677122,
+          "type": "glass"
+        },
+        {
+          "id": 110,
+          "load": 0.9839179333424547,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 113,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.74100725683328,
+        "latitude": 55.51999626792906
+      },
+      "boxes": [
+        {
+          "id": 112,
+          "load": 0.11314318527374212,
+          "type": "plastic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 116,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.55128974920707,
+        "latitude": 55.36321514470278
+      },
+      "boxes": [
+        {
+          "id": 114,
+          "load": 0.42645641359677444,
+          "type": "organic"
+        },
+        {
+          "id": 115,
+          "load": 0.3716782218257393,
+          "type": "plastic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 121,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.41469262693221,
+        "latitude": 55.95885534795018
+      },
+      "boxes": [
+        {
+          "id": 117,
+          "load": 0.17752414020603158,
+          "type": "organic"
+        },
+        {
+          "id": 118,
+          "load": 0.37673281745513776,
+          "type": "glass"
+        },
+        {
+          "id": 119,
+          "load": 0.48955163463756846,
+          "type": "metal"
+        },
+        {
+          "id": 120,
+          "load": 0.8642316836930526,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 126,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.90239157742333,
+        "latitude": 55.47528239168978
+      },
+      "boxes": [
+        {
+          "id": 122,
+          "load": 0.576145421428424,
+          "type": "organic"
+        },
+        {
+          "id": 123,
+          "load": 0.8864171154937942,
+          "type": "plastic"
+        },
+        {
+          "id": 124,
+          "load": 0.1597764857066295,
+          "type": "glass"
+        },
+        {
+          "id": 125,
+          "load": 0.43442783520261563,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 131,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.08150179609921,
+        "latitude": 55.941951033467696
+      },
+      "boxes": [
+        {
+          "id": 127,
+          "load": 0.8320013380688703,
+          "type": "organic"
+        },
+        {
+          "id": 128,
+          "load": 0.5110629243972958,
+          "type": "battery"
+        },
+        {
+          "id": 129,
+          "load": 0.3309685426740314,
+          "type": "glass"
+        },
+        {
+          "id": 130,
+          "load": 0.47695547173035113,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 133,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.597975593008215,
+        "latitude": 55.50009650257557
+      },
+      "boxes": [
+        {
+          "id": 132,
+          "load": 0.4588018399654453,
+          "type": "organic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 135,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.35520843813407,
+        "latitude": 55.846163306311155
+      },
+      "boxes": [
+        {
+          "id": 134,
+          "load": 0.7853604447457869,
+          "type": "battery"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 138,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.55783958887572,
+        "latitude": 55.56957960432977
+      },
+      "boxes": [
+        {
+          "id": 136,
+          "load": 0.2926857789362288,
+          "type": "battery"
+        },
+        {
+          "id": 137,
+          "load": 0.051229958596608505,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 142,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.73925158656346,
+        "latitude": 55.934520022730055
+      },
+      "boxes": [
+        {
+          "id": 139,
+          "load": 0.6346090275285959,
+          "type": "organic"
+        },
+        {
+          "id": 140,
+          "load": 0.44947211421706357,
+          "type": "plastic"
+        },
+        {
+          "id": 141,
+          "load": 0.3238374058172291,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 144,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.980643747299986,
+        "latitude": 55.91474602425152
+      },
+      "boxes": [
+        {
+          "id": 143,
+          "load": 0.8181621724243662,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 147,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.054182925856516,
+        "latitude": 56.16074809935639
+      },
+      "boxes": [
+        {
+          "id": 145,
+          "load": 0.3826425480533635,
+          "type": "organic"
+        },
+        {
+          "id": 146,
+          "load": 0.6698598898469171,
+          "type": "plastic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 150,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.493140454474485,
+        "latitude": 55.9793538445207
+      },
+      "boxes": [
+        {
+          "id": 148,
+          "load": 0.41436516930791134,
+          "type": "battery"
+        },
+        {
+          "id": 149,
+          "load": 0.8831933983794886,
+          "type": "plastic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 154,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.00153529959707,
+        "latitude": 56.082525176728566
+      },
+      "boxes": [
+        {
+          "id": 151,
+          "load": 0.5074133845218659,
+          "type": "light"
+        },
+        {
+          "id": 152,
+          "load": 0.5912161054380716,
+          "type": "metal"
+        },
+        {
+          "id": 153,
+          "load": 0.7867852300935946,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 160,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.48708309836103,
+        "latitude": 55.92301737003743
+      },
+      "boxes": [
+        {
+          "id": 155,
+          "load": 0.3142523217450185,
+          "type": "organic"
+        },
+        {
+          "id": 156,
+          "load": 0.0012819114724229586,
+          "type": "battery"
+        },
+        {
+          "id": 157,
+          "load": 0.942693640329833,
+          "type": "glass"
+        },
+        {
+          "id": 158,
+          "load": 0.10806157841726682,
+          "type": "light"
+        },
+        {
+          "id": 159,
+          "load": 0.46708620503752063,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 165,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.70821415224897,
+        "latitude": 55.58686950525302
+      },
+      "boxes": [
+        {
+          "id": 161,
+          "load": 0.24456215474003817,
+          "type": "battery"
+        },
+        {
+          "id": 162,
+          "load": 0.6524650041212924,
+          "type": "plastic"
+        },
+        {
+          "id": 163,
+          "load": 0.43103945635638097,
+          "type": "light"
+        },
+        {
+          "id": 164,
+          "load": 0.4066557223408124,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 167,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.19774849879169,
+        "latitude": 56.04247292819369
+      },
+      "boxes": [
+        {
+          "id": 166,
+          "load": 0.43068299350582806,
+          "type": "organic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 171,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.396283717371126,
+        "latitude": 56.26980686538927
+      },
+      "boxes": [
+        {
+          "id": 168,
+          "load": 0.4013649069838433,
+          "type": "glass"
+        },
+        {
+          "id": 169,
+          "load": 0.23176873175160095,
+          "type": "light"
+        },
+        {
+          "id": 170,
+          "load": 0.1281830343191297,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 174,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.448479796187954,
+        "latitude": 55.515626322185796
+      },
+      "boxes": [
+        {
+          "id": 172,
+          "load": 0.06570980759557654,
+          "type": "plastic"
+        },
+        {
+          "id": 173,
+          "load": 0.0976384730042944,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 179,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.579960115707884,
+        "latitude": 55.57977997135924
+      },
+      "boxes": [
+        {
+          "id": 175,
+          "load": 0.3301998155688749,
+          "type": "plastic"
+        },
+        {
+          "id": 176,
+          "load": 0.34011316395392766,
+          "type": "light"
+        },
+        {
+          "id": 177,
+          "load": 0.5786538685199047,
+          "type": "metal"
+        },
+        {
+          "id": 178,
+          "load": 0.4842660220755214,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 183,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.76538086428887,
+        "latitude": 55.76611813705077
+      },
+      "boxes": [
+        {
+          "id": 180,
+          "load": 0.8841701513382584,
+          "type": "organic"
+        },
+        {
+          "id": 181,
+          "load": 0.3114582554753116,
+          "type": "plastic"
+        },
+        {
+          "id": 182,
+          "load": 0.9613973929911332,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 187,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.764233054698536,
+        "latitude": 56.21678566370331
+      },
+      "boxes": [
+        {
+          "id": 184,
+          "load": 0.2568145382148065,
+          "type": "plastic"
+        },
+        {
+          "id": 185,
+          "load": 0.5894486565934903,
+          "type": "light"
+        },
+        {
+          "id": 186,
+          "load": 0.3273508835610891,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 191,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.63523026284364,
+        "latitude": 55.65840032507298
+      },
+      "boxes": [
+        {
+          "id": 188,
+          "load": 0.49772363589342283,
+          "type": "battery"
+        },
+        {
+          "id": 189,
+          "load": 0.17312002571280782,
+          "type": "glass"
+        },
+        {
+          "id": 190,
+          "load": 0.15803398669734536,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 195,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.42830675729748,
+        "latitude": 55.95743750281901
+      },
+      "boxes": [
+        {
+          "id": 192,
+          "load": 0.6292973941237439,
+          "type": "battery"
+        },
+        {
+          "id": 193,
+          "load": 0.06001165836230293,
+          "type": "plastic"
+        },
+        {
+          "id": 194,
+          "load": 0.8663763130052722,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 200,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.28388902390136,
+        "latitude": 55.81921606159465
+      },
+      "boxes": [
+        {
+          "id": 196,
+          "load": 0.9536173169351622,
+          "type": "battery"
+        },
+        {
+          "id": 197,
+          "load": 0.06371550959664529,
+          "type": "plastic"
+        },
+        {
+          "id": 198,
+          "load": 0.351715407778564,
+          "type": "glass"
+        },
+        {
+          "id": 199,
+          "load": 0.03538515796019337,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 204,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.45205442007191,
+        "latitude": 55.85744053762533
+      },
+      "boxes": [
+        {
+          "id": 201,
+          "load": 0.2818188030162506,
+          "type": "organic"
+        },
+        {
+          "id": 202,
+          "load": 0.1708090671541499,
+          "type": "battery"
+        },
+        {
+          "id": 203,
+          "load": 0.23744785839797677,
+          "type": "plastic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 207,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.49328083945418,
+        "latitude": 55.36979899531916
+      },
+      "boxes": [
+        {
+          "id": 205,
+          "load": 0.29992707853763534,
+          "type": "battery"
+        },
+        {
+          "id": 206,
+          "load": 0.7403443576824361,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 209,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.01428942308729,
+        "latitude": 55.58001588151958
+      },
+      "boxes": [
+        {
+          "id": 208,
+          "load": 0.7930364225971442,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 213,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.89372575712398,
+        "latitude": 55.95147618184696
+      },
+      "boxes": [
+        {
+          "id": 210,
+          "load": 0.9343504066589616,
+          "type": "battery"
+        },
+        {
+          "id": 211,
+          "load": 0.627467773959442,
+          "type": "plastic"
+        },
+        {
+          "id": 212,
+          "load": 0.6186254166494657,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 218,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.15325444108981,
+        "latitude": 55.41370929650565
+      },
+      "boxes": [
+        {
+          "id": 214,
+          "load": 0.8885836886462388,
+          "type": "organic"
+        },
+        {
+          "id": 215,
+          "load": 0.917062344370964,
+          "type": "battery"
+        },
+        {
+          "id": 216,
+          "load": 0.9546036790799749,
+          "type": "metal"
+        },
+        {
+          "id": 217,
+          "load": 0.9579687405096361,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 222,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.040899116045864,
+        "latitude": 55.45864000036165
+      },
+      "boxes": [
+        {
+          "id": 219,
+          "load": 0.7363061493157722,
+          "type": "organic"
+        },
+        {
+          "id": 220,
+          "load": 0.6113761539855141,
+          "type": "battery"
+        },
+        {
+          "id": 221,
+          "load": 0.7664812244543608,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 225,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.27137982276103,
+        "latitude": 55.90438800075976
+      },
+      "boxes": [
+        {
+          "id": 223,
+          "load": 0.367122730259141,
+          "type": "plastic"
+        },
+        {
+          "id": 224,
+          "load": 0.5375305859465983,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 228,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.4022323534813,
+        "latitude": 55.4870995664429
+      },
+      "boxes": [
+        {
+          "id": 226,
+          "load": 0.9723025298641812,
+          "type": "battery"
+        },
+        {
+          "id": 227,
+          "load": 0.9051889319700351,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 230,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.039494503388234,
+        "latitude": 55.90141163053268
+      },
+      "boxes": [
+        {
+          "id": 229,
+          "load": 0.9583732730014362,
+          "type": "organic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 234,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.925104464049184,
+        "latitude": 56.11727011750184
+      },
+      "boxes": [
+        {
+          "id": 231,
+          "load": 0.12923465464852113,
+          "type": "organic"
+        },
+        {
+          "id": 232,
+          "load": 0.3400008565152899,
+          "type": "battery"
+        },
+        {
+          "id": 233,
+          "load": 0.3518788583920962,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 238,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.13548948501955,
+        "latitude": 56.09364611523368
+      },
+      "boxes": [
+        {
+          "id": 235,
+          "load": 0.8519310018377659,
+          "type": "plastic"
+        },
+        {
+          "id": 236,
+          "load": 0.5056430112649621,
+          "type": "glass"
+        },
+        {
+          "id": 237,
+          "load": 0.7771211841209406,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 240,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.127880161250175,
+        "latitude": 56.0688659927993
+      },
+      "boxes": [
+        {
+          "id": 239,
+          "load": 0.4662931345400788,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 244,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.968517568338925,
+        "latitude": 55.32039569812155
+      },
+      "boxes": [
+        {
+          "id": 241,
+          "load": 0.006947410903080153,
+          "type": "battery"
+        },
+        {
+          "id": 242,
+          "load": 0.9717162924696573,
+          "type": "plastic"
+        },
+        {
+          "id": 243,
+          "load": 0.6718064559646879,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 247,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.17926534415961,
+        "latitude": 56.216039686774046
+      },
+      "boxes": [
+        {
+          "id": 245,
+          "load": 0.49392004474342643,
+          "type": "organic"
+        },
+        {
+          "id": 246,
+          "load": 0.1521115218076522,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 250,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.35415065146563,
+        "latitude": 55.48351383576608
+      },
+      "boxes": [
+        {
+          "id": 248,
+          "load": 0.8877669977067549,
+          "type": "organic"
+        },
+        {
+          "id": 249,
+          "load": 0.964145989393673,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 253,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.244135560130886,
+        "latitude": 56.267409676212296
+      },
+      "boxes": [
+        {
+          "id": 251,
+          "load": 0.001205310689302741,
+          "type": "organic"
+        },
+        {
+          "id": 252,
+          "load": 0.6633919941791352,
+          "type": "battery"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 255,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.553210978561374,
+        "latitude": 55.437032325593485
+      },
+      "boxes": [
+        {
+          "id": 254,
+          "load": 0.7021584554352063,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 261,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.89034469613952,
+        "latitude": 56.07725314645877
+      },
+      "boxes": [
+        {
+          "id": 256,
+          "load": 0.7618978657866964,
+          "type": "organic"
+        },
+        {
+          "id": 257,
+          "load": 0.7474248947278721,
+          "type": "glass"
+        },
+        {
+          "id": 258,
+          "load": 0.8638850709722609,
+          "type": "light"
+        },
+        {
+          "id": 259,
+          "load": 0.5589249302886357,
+          "type": "metal"
+        },
+        {
+          "id": 260,
+          "load": 0.5899204717944486,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 263,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.261807167011035,
+        "latitude": 56.214728058773204
+      },
+      "boxes": [
+        {
+          "id": 262,
+          "load": 0.546431621771232,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 268,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.346913396240254,
+        "latitude": 56.08793129242509
+      },
+      "boxes": [
+        {
+          "id": 264,
+          "load": 0.329296062061716,
+          "type": "battery"
+        },
+        {
+          "id": 265,
+          "load": 0.3225147019260961,
+          "type": "plastic"
+        },
+        {
+          "id": 266,
+          "load": 0.49069787409944754,
+          "type": "glass"
+        },
+        {
+          "id": 267,
+          "load": 0.46550032279870346,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 271,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.82333693735566,
+        "latitude": 55.84062771537899
+      },
+      "boxes": [
+        {
+          "id": 269,
+          "load": 0.29579931674897697,
+          "type": "glass"
+        },
+        {
+          "id": 270,
+          "load": 0.35260493317128316,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 275,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.041049027043876,
+        "latitude": 56.08070451079387
+      },
+      "boxes": [
+        {
+          "id": 272,
+          "load": 0.9634254742899145,
+          "type": "organic"
+        },
+        {
+          "id": 273,
+          "load": 0.21013354587429445,
+          "type": "battery"
+        },
+        {
+          "id": 274,
+          "load": 0.4626570480383284,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 281,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.059008352113246,
+        "latitude": 56.132227621242905
+      },
+      "boxes": [
+        {
+          "id": 276,
+          "load": 0.3797199494218607,
+          "type": "organic"
+        },
+        {
+          "id": 277,
+          "load": 0.9893689638676005,
+          "type": "plastic"
+        },
+        {
+          "id": 278,
+          "load": 0.11409997057797272,
+          "type": "glass"
+        },
+        {
+          "id": 279,
+          "load": 0.888292977298193,
+          "type": "light"
+        },
+        {
+          "id": 280,
+          "load": 0.15332465092685454,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 283,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.43562893071388,
+        "latitude": 55.6890011794592
+      },
+      "boxes": [
+        {
+          "id": 282,
+          "load": 0.762631221784796,
+          "type": "organic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 289,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.35374550003143,
+        "latitude": 56.25644989640482
+      },
+      "boxes": [
+        {
+          "id": 284,
+          "load": 0.8788792056962934,
+          "type": "organic"
+        },
+        {
+          "id": 285,
+          "load": 0.030760409514721476,
+          "type": "battery"
+        },
+        {
+          "id": 286,
+          "load": 0.5746147283442907,
+          "type": "plastic"
+        },
+        {
+          "id": 287,
+          "load": 0.8543375767556202,
+          "type": "light"
+        },
+        {
+          "id": 288,
+          "load": 0.7500931983606652,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 294,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.24368657620703,
+        "latitude": 55.93740726367832
+      },
+      "boxes": [
+        {
+          "id": 290,
+          "load": 0.9473437226207753,
+          "type": "battery"
+        },
+        {
+          "id": 291,
+          "load": 0.9413164210967553,
+          "type": "light"
+        },
+        {
+          "id": 292,
+          "load": 0.9529283104849213,
+          "type": "metal"
+        },
+        {
+          "id": 293,
+          "load": 0.12714942845660315,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 297,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.73707868114203,
+        "latitude": 55.71443557982742
+      },
+      "boxes": [
+        {
+          "id": 295,
+          "load": 0.1377276298144292,
+          "type": "battery"
+        },
+        {
+          "id": 296,
+          "load": 0.11965083353024164,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 299,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.89380358274871,
+        "latitude": 56.24570303102168
+      },
+      "boxes": [
+        {
+          "id": 298,
+          "load": 0.22537618966044604,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 303,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.2760617164774,
+        "latitude": 55.805989985783256
+      },
+      "boxes": [
+        {
+          "id": 300,
+          "load": 0.564298073428593,
+          "type": "light"
+        },
+        {
+          "id": 301,
+          "load": 0.9531048896189693,
+          "type": "metal"
+        },
+        {
+          "id": 302,
+          "load": 0.17748595433428127,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 305,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.6854505531563,
+        "latitude": 56.26032116359231
+      },
+      "boxes": [
+        {
+          "id": 304,
+          "load": 0.7645497470506462,
+          "type": "organic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 308,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.210264302570955,
+        "latitude": 56.193528180309215
+      },
+      "boxes": [
+        {
+          "id": 306,
+          "load": 0.037271155674387435,
+          "type": "organic"
+        },
+        {
+          "id": 307,
+          "load": 0.14327690068204002,
+          "type": "plastic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 310,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.70385308597855,
+        "latitude": 55.65781801587817
+      },
+      "boxes": [
+        {
+          "id": 309,
+          "load": 0.07186714109838133,
+          "type": "organic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 312,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.41460749683238,
+        "latitude": 56.16999564689204
+      },
+      "boxes": [
+        {
+          "id": 311,
+          "load": 0.8855479177581614,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 316,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.84108398123656,
+        "latitude": 56.20787576582213
+      },
+      "boxes": [
+        {
+          "id": 313,
+          "load": 0.016948752587887528,
+          "type": "organic"
+        },
+        {
+          "id": 314,
+          "load": 0.1788754323897801,
+          "type": "battery"
+        },
+        {
+          "id": 315,
+          "load": 0.4381474170941868,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 320,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.92720035881244,
+        "latitude": 55.84163988396026
+      },
+      "boxes": [
+        {
+          "id": 317,
+          "load": 0.8256312865663241,
+          "type": "organic"
+        },
+        {
+          "id": 318,
+          "load": 0.47631471818110493,
+          "type": "light"
+        },
+        {
+          "id": 319,
+          "load": 0.19160354722138528,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 325,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.27154242850625,
+        "latitude": 55.77393987366663
+      },
+      "boxes": [
+        {
+          "id": 321,
+          "load": 0.31757559910360234,
+          "type": "battery"
+        },
+        {
+          "id": 322,
+          "load": 0.5975967705331513,
+          "type": "glass"
+        },
+        {
+          "id": 323,
+          "load": 0.3725631787967012,
+          "type": "light"
+        },
+        {
+          "id": 324,
+          "load": 0.5183214654611659,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 329,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.790859346737236,
+        "latitude": 55.742671890090044
+      },
+      "boxes": [
+        {
+          "id": 326,
+          "load": 0.7831277540205744,
+          "type": "battery"
+        },
+        {
+          "id": 327,
+          "load": 0.6351484170451307,
+          "type": "plastic"
+        },
+        {
+          "id": 328,
+          "load": 0.1471862890120138,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 332,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.49755191431278,
+        "latitude": 55.558412141133715
+      },
+      "boxes": [
+        {
+          "id": 330,
+          "load": 0.2449475732150599,
+          "type": "glass"
+        },
+        {
+          "id": 331,
+          "load": 0.9823225516588374,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 338,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.31452001843904,
+        "latitude": 56.16435051156202
+      },
+      "boxes": [
+        {
+          "id": 333,
+          "load": 0.6019852104729624,
+          "type": "battery"
+        },
+        {
+          "id": 334,
+          "load": 0.15241399012141665,
+          "type": "plastic"
+        },
+        {
+          "id": 335,
+          "load": 0.7442374398594105,
+          "type": "glass"
+        },
+        {
+          "id": 336,
+          "load": 0.6565114604885047,
+          "type": "metal"
+        },
+        {
+          "id": 337,
+          "load": 0.08464641597546707,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 343,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.46906155452238,
+        "latitude": 55.73207361475719
+      },
+      "boxes": [
+        {
+          "id": 339,
+          "load": 0.4769437951479433,
+          "type": "battery"
+        },
+        {
+          "id": 340,
+          "load": 0.3244250744570183,
+          "type": "glass"
+        },
+        {
+          "id": 341,
+          "load": 0.18722498246678188,
+          "type": "metal"
+        },
+        {
+          "id": 342,
+          "load": 0.27655408916362667,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 347,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.037542772390275,
+        "latitude": 55.65984610830935
+      },
+      "boxes": [
+        {
+          "id": 344,
+          "load": 0.3935441314910757,
+          "type": "organic"
+        },
+        {
+          "id": 345,
+          "load": 0.44632160753630257,
+          "type": "plastic"
+        },
+        {
+          "id": 346,
+          "load": 0.7151276588452972,
+          "type": "light"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 349,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.73857033527649,
+        "latitude": 55.962135418398304
+      },
+      "boxes": [
+        {
+          "id": 348,
+          "load": 0.873980723180835,
+          "type": "organic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 351,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.816126705678094,
+        "latitude": 55.97381972430596
+      },
+      "boxes": [
+        {
+          "id": 350,
+          "load": 0.9147028937827618,
+          "type": "organic"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 353,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.66978278255634,
+        "latitude": 56.090577666760666
+      },
+      "boxes": [
+        {
+          "id": 352,
+          "load": 0.7281205792866262,
+          "type": "battery"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 358,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.40470005099518,
+        "latitude": 55.692039103735
+      },
+      "boxes": [
+        {
+          "id": 354,
+          "load": 0.4635068887236057,
+          "type": "battery"
+        },
+        {
+          "id": 355,
+          "load": 0.47479011146916117,
+          "type": "plastic"
+        },
+        {
+          "id": 356,
+          "load": 0.5357634002343477,
+          "type": "light"
+        },
+        {
+          "id": 357,
+          "load": 0.6645523438897257,
+          "type": "metal"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 363,
+      "type": "BOX",
+      "location": {
+        "longitude": 48.8090184598744,
+        "latitude": 55.81465090283701
+      },
+      "boxes": [
+        {
+          "id": 359,
+          "load": 0.15644883300652512,
+          "type": "battery"
+        },
+        {
+          "id": 360,
+          "load": 0.469390343617462,
+          "type": "plastic"
+        },
+        {
+          "id": 361,
+          "load": 0.45114388450044296,
+          "type": "glass"
+        },
+        {
+          "id": 362,
+          "load": 0.031218001437276932,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 366,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.1857376261113,
+        "latitude": 55.89190110097103
+      },
+      "boxes": [
+        {
+          "id": 364,
+          "load": 0.6908859026073072,
+          "type": "organic"
+        },
+        {
+          "id": 365,
+          "load": 0.9815036282046645,
+          "type": "glass"
+        }
+      ],
+      "canConfirm": true
+    },
+    {
+      "id": 371,
+      "type": "BOX",
+      "location": {
+        "longitude": 49.11816930898363,
+        "latitude": 55.84536022511426
+      },
+      "boxes": [
+        {
+          "id": 367,
+          "load": 0.5986462306630184,
+          "type": "glass"
+        },
+        {
+          "id": 368,
+          "load": 0.6413728892584544,
+          "type": "light"
+        },
+        {
+          "id": 369,
+          "load": 0.20303580009014444,
+          "type": "metal"
+        },
+        {
+          "id": 370,
+          "load": 0.9115977980156521,
+          "type": "paper"
+        }
+      ],
+      "canConfirm": true
+    }
+  ]
+}
