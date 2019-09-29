@@ -40,7 +40,7 @@
           "type": "paper"
         }
       ],
-      "canConfirm": true
+      "canConfirm": false
     },
     {
       "id": 11,

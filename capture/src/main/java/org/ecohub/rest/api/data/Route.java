@@ -17,10 +17,8 @@ import java.util.List;
  * date: 28.09.2019:11:18<br/>
  */
 @Data
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Route {
     List<Location> points;
     List<Location> polylines;

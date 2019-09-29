@@ -11,7 +11,6 @@ import org.apache.lucene.util.SloppyMath;
  * date: 23.08.2019:19:38<br/>
  */
 @Data
-@ToString
 @AllArgsConstructor
 public class Location {
     private final double longitude;

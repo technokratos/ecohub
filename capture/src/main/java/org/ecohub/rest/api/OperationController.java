@@ -22,21 +22,46 @@ import org.springframework.web.bind.annotation.RestController;
 import java.time.ZonedDateTime;
 import java.util.Map;
 import java.util.Optional;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.*;
 
 
+/**
+ *
+ * @startuml
+ * receiver -> server : /statusOperation
+ * server -> receiver : UNKNOWN
+ * client -> server : /request \nTrashOperationRequest
+ * server -> client : UN_CONFIRMED
+ * receiver -> server : /statusOperation
+ * server -> receiver : UN_CONFIRMED
+ * client -> receiver : put trash
+ * receiver -> server : /confirmByReceiver \nTrashOperationConfirm
+ * client -> server : /statusOperation \nOperationStatusRequest
+ * server -> client : CONFIRMED
+ * receiver -> server : /statusOperation
+ * server -> receiver : UNKNOWN
+ * === Without confirmation ==
+ * client -> server : /request \nTrashOperationRequest
+ * server -> client : TrashStatus
+ * client -> receiver : put trash
+ *
+ * @enduml
+ */
 @Component
 @RestController
 public class OperationController {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
+    ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
+
     //todo clear with timeout
     private Map<Long, TrashOperation> clientOperationMap = new ConcurrentHashMap<>();
-    private Map<Long, TrashOperation> currentOperationInReceiverMap = new ConcurrentHashMap<>();
+    private Map<Long, TrashOperation> receiverOperationMap = new ConcurrentHashMap<>();
 
     @Autowired
     private GeoService geoService;
+
 
     /**
      * 40 008,55 кь = 360
@@ -48,10 +73,12 @@ public class OperationController {
 
     @RequestMapping(value = "/request", method = RequestMethod.POST)
     public TrashStatusResponse request(TrashOperationRequest request) {
+        logger.info(request.toString());
         Receiver receiverById = geoService.getReceiverById(request.getReceiverId());
         Long clientId = request.getClientId();
 
         if (receiverById == null) {
+            logger.info("Not found receiver {}", request);
             throw new IllegalStateException("Not found receiver");
 //            Location location = request.getLocation();
 //            Location from  = location.plus(-R15M);
@@ -66,9 +93,13 @@ public class OperationController {
         TrashOperation trashOperation = new TrashOperation(null, clientId, receiverById.getId(), ZonedDateTime.now(), TrashStatus.UN_CONFIRMED, receiverById.getLocation(), 0.0, request.getType());
 
         if (receiverById.isCanConfirm()) {
-            clientOperationMap.put(receiverById.getId(), trashOperation);
-            currentOperationInReceiverMap.put(request.getClientId(), trashOperation);
+            logger.info("Wait confirm {}", request);
+            clientOperationMap.put(clientId, trashOperation);
+            receiverOperationMap.put(request.getReceiverId(), trashOperation);
         } else {
+            logger.info("Return status in box {}", request);
+            TrashClient clientById = geoService.getClientById(clientId);
+            clientById.setBalance(clientById.getBalance() + 0.1);
             trashOperation.setStatus(TrashStatus.IN_BOX);
         }
 
@@ -79,41 +110,55 @@ public class OperationController {
 
     @RequestMapping(value = "/confirmByReceiver", method = RequestMethod.POST)
     public TrashStatusResponse confirm(TrashOperationСonfirm confirmer) {
-
+        logger.info(confirmer.toString());
         Optional<Receiver> receiverById = geoService.getReceiverByBoxId(confirmer.getBoxId());
         if (receiverById.isPresent()) {
-            TrashOperation trashOperation = currentOperationInReceiverMap.remove(receiverById.get().getId());
+            Long receiverId = receiverById.get().getId();
+            TrashOperation trashOperation = receiverOperationMap.remove(receiverId);
             if (trashOperation != null) {
                 trashOperation.setType(confirmer.getType());
                 trashOperation.setStatus(TrashStatus.IN_BOX);
                 geoService.addOperation(trashOperation.getClientId(), trashOperation);
                 return new TrashStatusResponse(TrashStatus.IN_BOX);
             } else {
+                logger.info("Not found trash operation {}", confirmer);
                 return new TrashStatusResponse(TrashStatus.UNKNOWN);
             }
         } else {
+            logger.info("Not found receiver}", confirmer);
+            throw new IllegalStateException("Not found Receiver");
+        }
+    }
+    @RequestMapping(value = "/unConfirmByReceiver", method = RequestMethod.POST)
+    public TrashStatusResponse unConfirm(TrashOperationСonfirm confirmer) {
+        logger.info(confirmer.toString());
+        Optional<Receiver> receiverById = geoService.getReceiverByBoxId(confirmer.getBoxId());
+        if (receiverById.isPresent()) {
+            Long receiverId = receiverById.get().getId();
+            TrashOperation trashOperation = receiverOperationMap.remove(receiverId);
+            if (trashOperation != null) {
+                clientOperationMap.remove(trashOperation.getClientId());
+                return new TrashStatusResponse(trashOperation.getStatus());
+            } else {
+                logger.info("Not found trash operation {}", confirmer);
+                return new TrashStatusResponse(TrashStatus.UNKNOWN);
+            }
+        } else {
+            logger.info("Not found receiver}", confirmer);
             throw new IllegalStateException("Not found Receiver");
         }
     }
 
     @RequestMapping(value = "/statusOperation", method = RequestMethod.POST)
-    public TrashStatusResponse requestConfirm(OperationStatusRequest statusRequest) {
+    public TrashStatusResponse requestStatus(OperationStatusRequest statusRequest) {
         TrashOperation trashOperation = null;
         if (statusRequest.getClientId() != null) {
             trashOperation = clientOperationMap.get(statusRequest.getClientId());
         } else if (statusRequest.getReceiverId() != null) {
             Receiver receiverById = geoService.getReceiverById(statusRequest.getReceiverId());
             if (receiverById != null) {
-                trashOperation = clientOperationMap.get(receiverById.getId());
-                if (trashOperation != null) {
-                    trashOperation.setStatus(TrashStatus.IN_BOX);
-                    TrashClient clientById = geoService.getClientById(trashOperation.getClientId());
-                    clientById.setBalance(clientById.getBalance() + trashOperation.getWeight());
-                }
+                trashOperation = receiverOperationMap.get(receiverById.getId());
             }
-            //todo store in db and in cache
-
-
         }
         if (trashOperation != null) {
             return new TrashStatusResponse(trashOperation.getStatus());

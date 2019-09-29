@@ -2,6 +2,7 @@ package org.ecohub.rest.api.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.ToString;
 
 /**
  * @author Denis B. Kulikov<br/>

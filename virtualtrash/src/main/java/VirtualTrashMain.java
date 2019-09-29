@@ -21,16 +21,20 @@ public class VirtualTrashMain extends Application {
 
     private RestTemplate restTemplate = new RestTemplate();
 
-    public static final String HOST = "localhost";// "84.201.165.19";
+    public static final String HOST = "localhost";///"84.201.165.19";
     public static final String STATUS_URL = "http://" + HOST + ":8000/statusOperation?receiverId=2";
     public static final String CONFIRM_URL = "http://" + HOST + ":8000/confirmByReceiver?boxId=1&type=%22plastic%22&weight=0.04";
+    public static final String UN_CONFIRM_URL = "http://" + HOST + ":8000/unConfirmByReceiver?boxId=1";
 
     private final ScheduledExecutorService closeService = Executors.newScheduledThreadPool(1);
     private ScheduledExecutorService requestService = Executors.newScheduledThreadPool(1);
     private ImageView firstImage;
     private ImageView secondImage;
     private StackPane containerPane;
-    private ScheduledFuture<?> request;
+    private volatile ScheduledFuture<?> request;
+    private Scene scene;
+    private volatile boolean isOpen;
+
 
     public static void main(String[] args) {
         Application.launch(args);
@@ -43,49 +47,58 @@ public class VirtualTrashMain extends Application {
         containerPane = new StackPane();
         firstImage = new ImageView(new Image("cap0.png"));
         secondImage = new ImageView(new Image("cap1.png"));
+        scene = new Scene(containerPane);
         setClose();
-        //Adding HBox to the scene
-        Scene scene = new Scene(containerPane);
         //primaryStage.setFullScreen(true);
-        scene.setOnKeyPressed(e -> {
-            if (e.getCode().equals(KeyCode.SPACE)) {
-                confirm();
-            }
-        });
+
         scheduleRequest();
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
     private void scheduleRequest() {
-        requestService = Executors.newScheduledThreadPool(1);
+
         request = requestService.scheduleAtFixedRate(() -> {
             String status = getStatus();
             System.out.println("CURRENT STATUS " + status);
-            if (status.contains("IN_BOX")) {
+            if (status.contains("UN_CONFIRMED")) {
+                request.cancel(true);
+                request = null;
                 setOpen();
-                requestService.shutdownNow();
             }
         }, 1, 500, TimeUnit.MILLISECONDS);
+
     }
 
     private void setOpen() {
-
+        isOpen = true;
+        scene.setOnKeyPressed(e -> {
+            if (e.getCode().equals(KeyCode.SPACE)) {
+                confirm();
+            }
+        });
         Platform.runLater(() -> {
             System.out.println("Open");
             containerPane.getChildren().setAll(secondImage);
         });
 
         System.out.println("Schedule delay");
-        closeService.schedule(this::setClose, 5, TimeUnit.SECONDS);
+        closeService.schedule(() -> {
+            unconfirm();
+            setClose();
+            scheduleRequest();
+        }, 5, TimeUnit.SECONDS);
     }
 
     private void setClose() {
+        isOpen = false;
+        scene.setOnKeyPressed(event -> {
+            System.out.println("do nothing on press key in close");
+        });
         Platform.runLater(() -> {
             System.out.println("Close");
             containerPane.getChildren().setAll(firstImage);
         });
-        scheduleRequest();
 
 
     }
@@ -103,7 +116,8 @@ public class VirtualTrashMain extends Application {
             ResponseEntity<String> response = restTemplate.exchange(STATUS_URL, HttpMethod.POST, entity, String.class);
             return response.getBody();
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         return "";
     }
@@ -125,7 +139,26 @@ public class VirtualTrashMain extends Application {
             ResponseEntity<String> response = restTemplate.exchange(CONFIRM_URL, HttpMethod.POST, entity, String.class);
             return response.getBody();
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }
+        return "";
+    }
+
+    private String unconfirm() {
+        try {
+            System.out.println("CONFIRM");
+            HttpHeaders headers = new HttpHeaders();
+            headers.setAccept(Arrays.asList(new MediaType[]{MediaType.APPLICATION_JSON}));
+            // Request to return JSON format
+            headers.setContentType(MediaType.APPLICATION_JSON);
+            headers.set("boxId", "1");
+            // HttpEntity<String>: To get result as String.
+            HttpEntity<String> entity = new HttpEntity<>(headers);
+
+            ResponseEntity<String> response = restTemplate.exchange(UN_CONFIRM_URL, HttpMethod.POST, entity, String.class);
+            return response.getBody();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
         return "";
     }

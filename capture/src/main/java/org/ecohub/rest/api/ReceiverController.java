@@ -20,20 +20,6 @@ import java.util.List;
  * Get a location point in a certain area;
  * Conquer a location point;
  * Show your score;
- *
- * @startuml
- * client -> server : /request \nTrashOperationRequest
- * server -> client : TrashStatus
- * client -> receiver : put trash
- * receiver -> server : /confirmByReceiver \nTrashOperationConfirm
- * client -> server : /statusOperation \nOperationStatusRequest
- * server -> client : TrashStatus
- * === Without confirmation ==
- * client -> server : /request \nTrashOperationRequest
- * server -> client : TrashStatus
- * client -> receiver : put trash
- *
- * @enduml
  */
 @Component
 @RestController
