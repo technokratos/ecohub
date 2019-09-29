@@ -118,6 +118,8 @@ public class OperationController {
             if (trashOperation != null) {
                 trashOperation.setType(confirmer.getType());
                 trashOperation.setStatus(TrashStatus.IN_BOX);
+                trashOperation.setWeight(confirmer.getWeight());
+                trashOperation.setType(confirmer.getType());
                 geoService.addOperation(trashOperation.getClientId(), trashOperation);
                 return new TrashStatusResponse(TrashStatus.IN_BOX);
             } else {

@@ -87,7 +87,7 @@ public class VirtualTrashMain extends Application {
             unconfirm();
             setClose();
             scheduleRequest();
-        }, 5, TimeUnit.SECONDS);
+        }, 15, TimeUnit.SECONDS);
     }
 
     private void setClose() {
